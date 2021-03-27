@@ -57,7 +57,7 @@ def songslist(library, songs, prefixes):
     song_objects = sorted(song_objects, key=lambda x: locale.strxfrm(x.album))
     song_objects = sorted(song_objects, key=lambda x: locale.strxfrm(x.artist))
 
-    result = [ '\\input{{{0}}}'.format(song.path.replace("\\","/").strip()) for song in song_objects ]
+    result = [ '\\input{{{0}}}'.format(song.path.replace("\\","/").encode('utf-8').strip().decode('utf-8')) for song in song_objects ]
     return '\n'.join(result)
 
 def parseTemplate(template):
@@ -136,10 +136,10 @@ def makeTexFile(sb, library, output):
     out.write(formatDeclaration("name", {"default":name}))
     out.write(formatDeclaration("songslist", {"type":"stringlist"}))
     # output template parameter command
-    for name, parameter in parameters.iteritems():
+    for name, parameter in parameters.items():
         out.write(formatDeclaration(name, parameter))
     # output template parameter values
-    for name, value in sb.iteritems():
+    for name, value in sb.items():
         if name in parameters:
             out.write(formatDefinition(name, toValue(parameters[name],value)))
     # output songslist
@@ -207,7 +207,7 @@ def makeDepend(sb, library, output):
     out.close()
 
 def usage():
-    print "No usage information yet."
+    print("No usage information yet.")
 
 def main():
     locale.setlocale(locale.LC_ALL, '') # set script locale to match user's
@@ -215,9 +215,9 @@ def main():
         opts, args = getopt.getopt(sys.argv[1:], 
                                    "hs:o:l:d",
                                    ["help","songbook=","output=","depend","library="])
-    except getopt.GetoptError, err:
+    except err:
         # print help and exit
-        print str(err)
+        print(str(err))
         usage()
         sys.exit(2)
 
