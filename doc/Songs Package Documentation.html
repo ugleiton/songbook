@@ -1,0 +1,3322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0049)http://songs.sourceforge.net./songsdoc/songs.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-language" content="en">
+
+<title>Songs Package Documentation</title>
+<script type="text/javascript" async="" src="./Songs Package Documentation_files/ga.js.download"></script><script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-12313677-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga,s);
+	})();
+</script>
+<style type="text/css">
+<!--
+body { font-family: arial, sans-serif; font-size: 95%; margin-left: 30px }
+a:link { color : #3333ff }
+p { margin-top: 0px; margin-bottom: 15px }
+#menuanchor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 40px;
+  width: .7em;
+  overflow-x: visible;
+}
+#menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: #990000;
+  color: white;
+}
+#menu:hover { left: 0; }
+#menu tr { height: 100%; }
+#menu a:link { color: white; }
+#menu a:visited { color: white; }
+#menu a:hover { color: yellow; }
+#menu a:active { color: yellow; }
+.outline {
+  vertical-align: top;
+  white-space: nowrap;
+  font-size: medium;
+  height: 0;
+}
+.outline div {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 10px 0 10px;
+  margin: 0 0 0 5px;
+  overflow-y: auto;
+  direction: rtl;
+}
+.outline div div {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow-y: visible;
+  direction: ltr;
+}
+.outline p {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-indent: -10px;
+}
+.outline p.level1 { padding-left: 10px; font-size: 120%; }
+.outline p.level2 { padding-left: 30px; }
+.outline p.level3 { padding-left: 50px; }
+.outline p.level4 { padding-left: 65px; font-size: 80%; }
+.grip {
+  vertical-align: middle;
+  font-size: 40px;
+}
+.grip div {
+  width: .7em;
+  text-align: center;
+}
+.toctext {
+  margin: 0 0 0 5px;
+  font-size: 20px;
+  writing-mode: tb-rl;
+  white-space: nowrap;
+}
+.gripglyph:after { content: "\0000BB" }
+#menu:hover .gripglyph:after { content: "\0000AB" }
+p.abstract {
+  margin-left: 100px; margin-right: 100px;
+  text-align: justify; text-justify: newspaper;
+}
+tt,pre { color : #000099 }
+pre.compact { font-size : 90% }
+i.meta {
+  color : #555555;
+  font-family : arial, sans-serif;
+  font-size : 95%
+}
+h2,h3,h4 { color: #990000; margin-bottom: 8px }
+tt.lmar,hr { color : #990000 }
+td.lmar { padding-right: 10px }
+img.product {
+  position : relative;
+  bottom : -9px;
+}
+.center { text-align: center }
+.nowrap { white-space: nowrap }
+.large { font-size: large}
+div.center table { margin: 0px auto 15px auto; text-align: left }
+-->
+</style>
+</head>
+<body>
+<div id="menuanchor"><table id="menu" cellspacing="0"><tbody><tr>
+  <td class="outline"><div><div>
+    <p class="level1"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec1">1. Introduction</a></p>
+    <p class="level1"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec2">2. Terms of Use</a></p>
+    <p class="level1"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec3">3. Sample Document</a></p>
+    <p class="level1"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec4">4. Initialization and Options</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec4.0.0.1">Output Type</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec4.0.0.2">Measure Bars</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec4.0.0.3">Transposition</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec4.0.0.4">Indexes</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec4.0.0.5">Scripture Quotations</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec4.0.0.6">Shaded Boxes</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec4.0.0.7">Partial Song Sets</a></p>
+    <p class="level1"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5">5. Songs</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.1">5.1. Beginning a Song</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.1.0.1">Song Sets</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.1.0.2">Songs</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.1.0.3">Song Authors</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.1.0.4">Copyright Info</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.1.0.5">Licensing Info</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.1.0.6">Scripture References</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.2">5.2. Verses and Choruses</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.2.0.1">Starting A Verse Or Chorus</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.3">5.3. Chords</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.3.0.1">Chords Without Lyrics</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.3.0.2">Symbols Under Chords</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.3.0.3">Extending Chords Over Adjacent Words</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.3.0.4">Accidentals Outside Chords</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.4">5.4. Replaying Chords and Choruses</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.4.0.1">Selective Memorization</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.4.0.2">Memorizing Multiple Chord Sequences</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.4.0.3">Replaying Choruses</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.5">5.5. Line and Column Breaks</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.5.0.1">Line Breaking</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.5.0.2">Column Breaks Within Songs</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.5.0.3">Column Breaks Between Songs</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.6">5.6. Echoes and Repeats</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.6.0.1">Echo Parts</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.6.0.2">Repeated Lines</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.7">5.7. Measure Bars</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.8">5.8. Textual Notes</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.8.0.1">Guitar Capos</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.9">5.9. Chords in Ligatures</a></p>
+    <p class="level1"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec6">6. Guitar Tablatures</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec6.0.0.1">Tablatures Within Macros</a></p>
+    <p class="level1"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec7">7. Automatic Transposition</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec7.0.0.1">Enharmonics</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec7.0.0.2">Modulated Verses</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec7.0.0.3">Both Keys</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec7.0.0.4">Changing Note Names</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec7.0.0.5">Transposing Chords In Macros</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec7.0.0.6">Transposing Guitar Tablatures</a></p>
+    <p class="level1"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec8">8. Between Songs</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec8.1">8.1. Intersong Displays</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec8.2">8.2. Scripture Quotations</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec8.2.0.1">Starting a Scripture Quotation</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec8.2.0.2">Tuplets</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec8.2.0.3">Stanzas</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec8.2.0.4">Indented Blocks</a></p>
+    <p class="level1"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec9">9. Chapters and Sections</a></p>
+    <p class="level1"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec10">10. Indexes</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec10.1">10.1. Index Creation</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec10.2">10.2. Index Entries</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec10.2.0.1">Indexing Lyrics</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec10.2.0.2">Indexing Extra Song Titles</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec10.3">10.3. Compiling</a></p>
+    <p class="level1"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11">11. Customizing the Book</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.1">11.1. Song and Verse Numbering</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.1.0.1">Song Numbering</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.1.0.2">Verse Numbering</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.2">11.2. Song Appearance</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.2.0.1">Font Selection</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.2.0.2">Accidental Symbols</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.2.0.3">Verse and Chorus Titles</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.2.0.4">Spacing Options</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.2.0.5">Song Top and Bottom Material</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.2.0.6">Page- and Column-breaking</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.2.0.7">Text Justification</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.3">11.3. Scripture Appearance</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.4">11.4. Conditional Blocks</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.5">11.5. Page Layout</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.6">11.6. Indexes</a></p>
+    <p class="level3"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.6.1">11.6.1. Index Appearance</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.6.1.1">Index Titles</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.6.1.2">Layout and page divisions</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.6.1.3">Fonts and colors</a></p>
+    <p class="level3"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.6.2">11.6.2. Entry References</a></p>
+    <p class="level3"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.6.3">11.6.3. PDF Bookmarks and Links</a></p>
+    <p class="level3"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.6.4">11.6.4. Sort Order</a></p>
+    <p class="level3"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.6.5">11.6.5. Special Words In Song Info</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.7">11.7. Page Headers and Footers</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.8">11.8. Defining New Beginsong Keyvals</a></p>
+    <p class="level2"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.9">11.9. Font Kerning Corrections</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.9.0.1">Chord Overstriking</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.9.0.2">Scripture Font Quotation Marks</a></p>
+    <p class="level1"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec12">12. Informational Macros</a></p>
+    <p class="level1"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec13">13. Other Resources</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec13.0.0.1">Ease of Song Entry</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec13.0.0.2">Song Structure</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec13.0.0.3">Multiple columns</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec13.0.0.4">Indexes</a></p>
+    <p class="level4"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec13.0.0.5">Automatic Transposition</a></p>
+    <p class="level1"><a href="http://songs.sourceforge.net./songsdoc/songs.html#sec14">14. GNU General Public License</a></p>
+  </div></div></td>
+  <td class="grip">
+  <div class="toctext">Table of Contents</div>
+    <p class="gripglyph"></p>
+    <div class="toctext">Table of Contents</div>
+  </td>
+</tr></tbody></table></div>
+<h2 class="center">Abstract</h2><p class="abstract">
+The <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package produces songbooks that contain lyrics and chords
+(but not full sheet music).
+It allows lyric books, chord books, overhead slides, and digital projector
+slides to all be maintained and generated from a single LaTeX source
+document.
+Automatic transposition, guitar tablature diagrams, handouts, and
+a variety of specialized song indexes are supported.
+</p><h2><a name="sec1">1 Introduction</a></h2><p>The <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> LaTeX package produces books of songs that contain lyrics and
+(optionally) chords.
+A single source document yields a lyric book for singers, a chord book for
+musicians, and overhead or digital projector slides for corporate singing.</p><p>The software is especially well suited for churches and religious
+fellowships desiring to create their own books of worship songs.
+Rather than purchasing a fixed hymnal of songs, the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package allows
+worship coordinators to maintain a constantly evolving repertoire of music
+to which they can add and remove songs over time.
+As the book content changes, the indexes, spacing, and other formatting
+details automatically adjust to stay consistent.
+Songs can also be quickly selected and arranged for specific events or
+services through the use of scripture indexes, automatic transposition,
+and handout and slide set creation features.</p><h2><a name="sec2">2 Terms of Use</a></h2><p>The <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version&nbsp;2
+of the License, or (at your option) any later version.
+A copy of the license can be found in <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec14">section 14</a>.</p><p>This program is distributed in the hope that it will be useful,
+but <i>without any warranty</i>; without even the implied warranty of
+<i>merchantability</i> or <i>fitness for a particular purpose</i>. See the
+GNU General Public License in <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec14">section 14</a> for details.
+A copy of the license can also be obtained by writing to the
+Free Software Foundation, Inc., 51 Franklin Street, 5th Floor,
+Boston, MA 02110-1301, USA.</p><p>This software is copyright ©&nbsp;2018 Kevin W.&nbsp;Hamlen.
+For contact information or the latest version, see the project webpage at:</p><p class="center"><a href="http://songs.sourceforge.net/">http://songs.sourceforge.net</a></p><h2><a name="sec3">3 Sample Document</a></h2><p>For those who would like to start making song books quickly, the
+following is a sample document that yields a simple song book with
+one song.
+Starting from this template, you can begin to add songs and customizations
+to create a larger book.
+Instructions for compiling this sample song book follow the listing.</p><blockquote><pre class="compact">\documentclass{article}
+\usepackage[chorded]{songs}
+
+\noversenumbers
+
+\begin{document}
+
+\songsection{Worship Songs}
+
+\begin{songs}{}
+\beginsong{Doxology}[by={Louis Bourgeois and Thomas Ken},
+                     sr={Revelation 5:13},
+                     cr={Public domain.}]
+\beginverse
+\[G]Praise God, \[D]from \[Em]Whom \[Bm]all \[Em]bless\[D]ings \[G]flow;
+\[G]Praise Him, all \[D]crea\[Em]tures \[C]here \[G]be\[D]low;
+\[Em]Praise \[D]Him \[G]a\[D]bove, \[G]ye \[C]heav'n\[D]ly \[Em]host;
+\[G]Praise Fa\[Em]ther, \[D]Son, \[Am]and \[G/B G/C]Ho\[D]ly \[G]Ghost.
+\[C]A\[G]men.
+\endverse
+\endsong
+\end{songs}
+
+\end{document}
+</pre></blockquote><p>To compile this book, run LaTeX (<tt>pdflatex</tt> is recommended):</p><blockquote><pre><tt>pdflatex mybook.tex</tt>
+</pre></blockquote><p>(where <tt>mybook.tex</tt> is the name of the source document above).
+The final document is named <tt>mybook.pdf</tt> if you use <tt>pdflatex</tt> or
+<tt>mybook.dvi</tt> if you use regular <tt>latex</tt>.</p><p>Note that compiling a document that includes indexes requires extra steps.
+See <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec10.3">section 10.3</a> for details.</p><h2><a name="sec4">4 Initialization and Options</a></h2><p>Each LaTeX document that uses the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package should contain a
+line like the following near the top of the document:</p><blockquote><pre><tt>\usepackage[</tt><i class="meta">&lt;options&gt;</i><tt>]{songs}</tt>
+</pre></blockquote><p>Supported <i class="meta">&lt;options&gt;</i> include the following:</p><table cellspacing="0">
+
+<tbody><tr><td></td><td><h1 class="center">The S<img src="./Songs Package Documentation_files/bigwn.gif" alt="o">ngs Package</h1>
+<p>This webpage documents the <a href="http://songs.sourceforge.net/">Songs LaTeX Package</a>. For an overview of the software and for download information, see the <a href="http://songs.sourceforge.net/">Songs Package Homepage</a>.</p>
+<p>This webpage was generated semi-automatically from the official documentation (available online in <a href="http://songs.sourceforge.net/songs.pdf">pdf form</a>). This web version omits the package implementation details and associated commentary. For full documentation including implementation commentary, please consult the <a href="http://songs.sourceforge.net/songs.pdf">songs.pdf</a> file.</p>
+
+
+</td></tr><tr><td></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tr><tr><td class="lmar" align="right" valign="top">
+<a name="env.lyric"><tt class="lmar">lyric</tt></a><br>
+<a name="env.chorded"><tt class="lmar">chorded</tt></a><br>
+<a name="env.slides"><tt class="lmar">slides</tt></a><br>
+<a name="env.rawtext"><tt class="lmar">rawtext</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec4.0.0.1">Output Type.</a></b> &nbsp;The <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package can produce four kinds of books: lyric books, chord
+books, books of overhead slides, and raw text output.
+You can specify which kind of book is to be produced by specifying one of
+<tt>lyric</tt>, <tt>chorded</tt>, <tt>slides</tt>, or <tt>rawtext</tt> as an option.
+The <tt>slides</tt> and <tt>chorded</tt> options can be used together to create chorded
+slides.
+If no output options are specified, <tt>chorded</tt> is the default.</p>
+
+<p>Lyric books omit all chords, whereas chord books include chords and
+additional information for musicians (specified using <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.musicnote"><tt>\musicnote</tt></a>).
+Books of overhead slides typeset one song per page in a large font, centered.</p>
+
+<p>Raw text output yields an ascii text file named <i class="meta">&lt;jobname&gt;</i><tt>.txt</tt>
+(where <i class="meta">&lt;jobname&gt;</i> is the root filename) containing lyrics without chords.
+This can be useful for importing song books into another program, such as a
+spell-checker.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.chordson"><tt class="lmar">\chordson</tt></a><br>
+<a name="mac.chordsoff"><tt class="lmar">\chordsoff</tt></a><br>
+</td><td valign="top">
+<p>Chords can be turned on or off in the middle of the document
+by using the <tt>\chordson</tt> or <tt>\chordsoff</tt> macros.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.slides"><tt class="lmar">\slides</tt></a><br>
+</td><td valign="top">
+<p>Slides mode can be activated in the middle of the document by using the
+<tt>\slides</tt> macro.
+For best results, this should typically only be done in the document
+preamble or at the beginning of a fresh page.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="env.nomeasures"><tt class="lmar">nomeasures</tt></a><br>
+<a name="env.showmeasures"><tt class="lmar">showmeasures</tt></a><br>
+<a name="mac.measureson"><tt class="lmar">\measureson</tt></a><br>
+<a name="mac.measuresoff"><tt class="lmar">\measuresoff</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec4.0.0.2">Measure Bars.</a></b> &nbsp;The <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package includes a facility for placing measure bars in chord
+books (see <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.7">section 5.7</a>).
+To omit these measure bars, use the <tt>nomeasures</tt> option;
+to display them, use the <tt>showmeasures</tt> option (the default).
+Measure bars can also be turned on or off in the middle of the document by
+using the <tt>\measureson</tt> or <tt>\measuresoff</tt> macros.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="env.transposecapos"><tt class="lmar">transposecapos</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec4.0.0.3">Transposition.</a></b> &nbsp;The <tt>transposecapos</tt> option changes the effect of the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.capo"><tt>\capo</tt></a> macro.
+Normally, using <tt>\capo{</tt><i class="meta">&lt;n&gt;</i><tt>}</tt> within a song environment produces a
+textual note in chord books that suggests the use of a guitar capo on fret
+<i class="meta">&lt;n&gt;</i>.
+However, when the <tt>transposecapos</tt> option is active, these textual notes
+are omitted and instead the effect of <tt>\capo{</tt><i class="meta">&lt;n&gt;</i><tt>}</tt> is the
+same as for <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.transpose"><tt>\transpose</tt></a><tt>{</tt><i class="meta">&lt;n&gt;</i><tt>}</tt>.
+That is, chords between the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.capo"><tt>\capo</tt></a> macro and the end of the song are
+automatically transposed up by <i class="meta">&lt;n&gt;</i> half-steps.
+This can be useful for adapting a chord book for guitarists to one that can
+be used by pianists, who don't have the luxury of capos.
+See <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.8">section 5.8</a> and <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec7">section 7</a> for more information on the
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.capo"><tt>\capo</tt></a> and <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.transpose"><tt>\transpose</tt></a> macros.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="env.noindexes"><tt class="lmar">noindexes</tt></a><br>
+<a name="mac.indexeson"><tt class="lmar">\indexeson</tt></a><br>
+<a name="mac.indexesoff"><tt class="lmar">\indexesoff</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec4.0.0.4">Indexes.</a></b> &nbsp;The <tt>noindexes</tt> option suppresses the typesetting of any in-document indexes.
+Display of indexes can also be turned on or off using the <tt>\indexeson</tt> and
+<tt>\indexesoff</tt> macros.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="env.nopdfindex"><tt class="lmar">nopdfindex</tt></a><br>
+</td><td valign="top">
+<p>PDF bookmark entries and hyperlinks can be suppressed with the <tt>nopdfindex</tt>
+option.
+For finer control of PDF indexes, see <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.6">section 11.6</a>.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="env.noscripture"><tt class="lmar">noscripture</tt></a><br>
+<a name="mac.scriptureon"><tt class="lmar">\scriptureon</tt></a><br>
+<a name="mac.scriptureoff"><tt class="lmar">\scriptureoff</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec4.0.0.5">Scripture Quotations.</a></b> &nbsp;The <tt>noscripture</tt> option omits scripture quotations (see
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#sec8.2">section 8.2</a>) from the output.
+You can also turn scripture quotations on or off in the middle of the
+document by using <tt>\scriptureon</tt> or <tt>\scriptureoff</tt>, respectively.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="env.noshading"><tt class="lmar">noshading</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec4.0.0.6">Shaded Boxes.</a></b> &nbsp;The <tt>noshading</tt> option causes all shaded boxes, such as those that surround
+song numbers and textual notes, to be omitted.
+You might want to use this option if printing such shaded boxes causes
+problems for your printer or uses too much ink.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.includeonlysongs"><tt class="lmar">\includeonlysongs</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec4.0.0.7">Partial Song Sets.</a></b> &nbsp;Often it is useful to be able to extract a subset of songs from the master
+document—e.g.&nbsp;to create a handout or set of overhead slides for a specific
+worship service.
+To do this, you can type <tt>\includeonlysongs{</tt><i class="meta">&lt;songlist&gt;</i><tt>}</tt> in the
+document preamble (i.e., before the <tt>\begin{document}</tt> line), where
+<i class="meta">&lt;songlist&gt;</i> is a comma-separated list of the song numbers to include.
+For example, </p>
+
+<blockquote><pre><tt>\includeonlysongs{37,50,2}</tt>
+</pre></blockquote>
+
+
+<p>creates a document consisting only of songs 37, 50, and 2, in that order.</p>
+
+<p>Partial books generated with <tt>\includeonlysongs</tt> omit all scripture
+quotations (<a href="http://songs.sourceforge.net./songsdoc/songs.html#sec8.2">section 8.2</a>), and ignore uses of
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.nextcol"><tt>\nextcol</tt></a>, <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.brk"><tt>\brk</tt></a>, <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.sclearpage"><tt>\sclearpage</tt></a>, and <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.scleardpage"><tt>\scleardpage</tt></a>
+between songs unless they are followed by a star (e.g., <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.nextcol"><tt>\nextcol</tt></a><tt>*</tt>).
+To force a column- or page-break at a specific point in a partial book,
+add the word <tt>nextcol</tt>, <tt>brk</tt>, <tt>sclearpage</tt>, or <tt>scleardpage</tt> at the
+corresponding point in the <i class="meta">&lt;songlist&gt;</i>.</p>
+
+<p>The <tt>\includeonlysongs</tt> macro only reorders songs within each
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#env.songs"><tt>songs</tt></a> environment (see <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5">section 5</a>), not between different
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#env.songs"><tt>songs</tt></a> environments.
+It also cannot be used in conjunction with the <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.rawtext"><tt>rawtext</tt></a> option.</p>
+
+<h2><a name="sec5">5 Songs</a></h2>
+
+<h3><a name="sec5.1">5.1 Beginning a Song</a></h3>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="env.songs"><tt class="lmar">songs</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec5.1.0.1">Song Sets.</a></b> &nbsp;Songs are contained within <tt>songs</tt> environments.
+Each <tt>songs</tt> environment begins and ends with:</p>
+
+<blockquote><pre><tt>\begin{songs}{</tt><i class="meta">&lt;indexes&gt;</i><tt>}</tt>
+&#8942;
+<tt>\end{songs}</tt>
+</pre></blockquote>
+
+
+<p><i class="meta">&lt;indexes&gt;</i> is a comma-separated list of index <i class="meta">&lt;id&gt;</i>'s
+(see <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec10.1">section 10.1</a>)—one identifier for each index that is to
+include songs in this song set.
+Between the <tt>\begin{songs}</tt> and <tt>\end{songs}</tt> lines of
+a song section only songs (see below) or inter-song environments
+(see <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec8">section 8</a>) may appear.
+No text in a <tt>songs</tt> environment may appear outside of these environments.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.beginsong"><tt class="lmar">\beginsong</tt></a><br>
+<a name="mac.endsong"><tt class="lmar">\endsong</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec5.1.0.2">Songs.</a></b> &nbsp;A song begins and ends with:</p>
+
+<blockquote><pre><tt>\beginsong{</tt><i class="meta">&lt;titles&gt;</i><tt>}[</tt><i class="meta">&lt;otherinfo&gt;</i><tt>]</tt>
+&#8942;
+<tt>\endsong</tt>
+</pre></blockquote>
+
+
+<p>Songs should appear only within <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.songs"><tt>songs</tt></a> environments (see above)
+unless you are supplying your own page-builder (see <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.5">section 11.5</a>).</p>
+
+<p>In the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> line, <i class="meta">&lt;titles&gt;</i> is one or more song titles
+separated by <tt>\\</tt>.
+If multiple titles are provided, the first is typeset normally
+atop the song and the rest are each typeset in parentheses on
+separate lines.</p>
+
+<p>The <tt>[</tt><i class="meta">&lt;otherinfo&gt;</i><tt>]</tt> part is an optional comma-separated list of
+key-value pairs (keyvals) of the form <i class="meta">&lt;key&gt;</i><tt>=</tt><i class="meta">&lt;value&gt;</i>.
+The possible keys and their values are:</p>
+
+
+<div class="center"><table><tbody><tr><td>  <tt>by={</tt><i class="meta">&lt;authors&gt;</i><tt>}</tt></td><td>authors, composers, and other contributors</td></tr>
+<tr><td>  <tt>cr={</tt><i class="meta">&lt;copyright&gt;</i><tt>}</tt></td><td>copyright information</td></tr>
+<tr><td>  <tt>li={</tt><i class="meta">&lt;license&gt;</i><tt>}</tt></td><td>licensing information</td></tr>
+<tr><td>  <tt>sr={</tt><i class="meta">&lt;refs&gt;</i><tt>}</tt></td><td>related scripture references</td></tr>
+<tr><td>  <tt>index={</tt><i class="meta">&lt;lyrics&gt;</i><tt>}</tt></td><td>an extra index entry for a line of lyrics</td></tr>
+<tr><td>  <tt>ititle={</tt><i class="meta">&lt;title&gt;</i><tt>}</tt></td><td>an extra index entry for a hidden title</td></tr></tbody></table></div>
+
+
+
+<p>For example, a song that begins and ends with</p>
+
+<blockquote><pre><tt>\beginsong{Title1 \\ Title2}[by={Joe Smith}, sr={Job 3},</tt>
+<tt>  cr={\copyright~2018 XYZ.}, li={Used with permission.}]</tt>
+<tt>\endsong</tt>
+</pre></blockquote>
+
+<p>looks like</p>
+
+<p class="center"><img src="./Songs Package Documentation_files/sample1.gif" alt="document fragment"></p>
+
+<p>The four keyvals used in the above example are described in detail in the
+remainder of this section;
+the final two are documented in <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec10.2">section 10.2</a>.
+You can also create your own keyvals (see <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.8">section 11.8</a>).</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="env.byE"><tt class="lmar">by=</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec5.1.0.3">Song Authors.</a></b> &nbsp;The <tt>by={</tt><i class="meta">&lt;authors&gt;</i><tt>}</tt> keyval lists one or more authors,
+composers, translators, etc.
+An entry is added to each author index associated with the current
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#env.songs"><tt>songs</tt></a> environment for each contributor listed.
+Contributors are expected to be separated by commas, semicolons, or the
+word <tt>and</tt>.
+For example:</p>
+
+<blockquote><pre><tt>by={Fred Smith, John Doe, and Billy Bob}</tt>
+</pre></blockquote>
+
+
+<p>Words separated by a macro-space (<tt>\&#9251;</tt>) or tie (<tt>~</tt>)
+instead of a regular space are treated as single words by the indexer.
+For example, <tt>The&#9251;Vienna&#9251;Boys’&#9251;Choir</tt> is indexed as
+"Choir, The Vienna Boys'&#8201;" but
+<tt>The&#9251;Vienna\&#9251;Boys’\&#9251;Choir</tt> is indexed as
+"Vienna Boys' Choir, The".</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="env.crE"><tt class="lmar">cr=</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec5.1.0.4">Copyright Info.</a></b> &nbsp;The <tt>cr={</tt><i class="meta">&lt;copyright&gt;</i><tt>}</tt> keyval specifies the copyright-holder of the
+song, if any.
+For example:</p>
+
+<blockquote><pre><tt>cr={\copyright~2000 ABC Songs, Inc.}</tt>
+</pre></blockquote>
+
+
+<p>Copyright information is typeset in fine print at the bottom of the song.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="env.liE"><tt class="lmar">li=</tt></a><br>
+<a name="mac.setlicense"><tt class="lmar">\setlicense</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec5.1.0.5">Licensing Info.</a></b> &nbsp;Licensing information is provided by <tt>li={</tt><i class="meta">&lt;license&gt;</i><tt>}</tt>, where
+<i class="meta">&lt;license&gt;</i> is any text.
+Licensing information is displayed in fine print under the song just
+after the copyright information (if any).
+Alternatively, writing <tt>\setlicense{</tt><i class="meta">&lt;license&gt;</i><tt>}</tt> anywhere between
+the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> and <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.endsong"><tt>\endsong</tt></a> lines is equivalent to using
+<tt>li={</tt><i class="meta">&lt;license&gt;</i><tt>}</tt> in the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> line.</p>
+
+<p>When many songs in a book are covered by a common license, it is
+usually convenient to create a macro to abbreviate the licensing
+information.
+For example, if your organization has a music license from Christian
+Copyright Licensing International with license number 1234567, you might
+define a macro like</p>
+
+<blockquote><pre><tt>\newcommand{\CCLI}{(CCLI \#1234567)}</tt>
+</pre></blockquote>
+
+
+<p>Then you could write <tt>li=\CCLI</tt> in the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> line of each song
+covered by CCLI.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="env.srE"><tt class="lmar">sr=</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec5.1.0.6">Scripture References.</a></b> &nbsp;The <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package has extensive support for scripture citations and
+indexes of scripture citations.
+To cite scripture references for the song, use the keyval
+<tt>sr={</tt><i class="meta">&lt;refs&gt;</i><tt>}</tt>, where <i class="meta">&lt;refs&gt;</i> is a list of scripture
+references.
+Index entries are added to all scripture indexes associated
+with the current <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.songs"><tt>songs</tt></a> environment for each such reference.
+The <tt>songidx</tt> index generation script (see <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec10.3">section 10.3</a>) expects
+<i class="meta">&lt;refs&gt;</i> to be a list of references in which semicolons are used to
+separate references to different books, and commas are used to separate
+references to to different chapters and verses within the same book.
+For example, one valid scripture citation is</p>
+
+<blockquote><pre><tt>sr={John 3:16,17, 4:1-5; Jude 3}</tt>
+</pre></blockquote>
+
+<p>The full formal syntax of a valid <i class="meta">&lt;refs&gt;</i> argument is given by the following syntax rules:</p>
+
+<div class="center"><table><tbody><tr><td align="right">  <i class="meta">&lt;refs&gt;</i></td><td>&#8594;</td><td><i class="meta">&lt;nothing&gt;</i> | <i class="meta">&lt;ref&gt;</i><tt>;</tt>&#9251;<i class="meta">&lt;ref&gt;</i><tt>;...;</tt>&#9251;<i class="meta">&lt;ref&gt;</i></td></tr>
+<tr><td align="right">  <i class="meta">&lt;ref&gt;</i></td><td>&#8594;</td><td><i class="meta">&lt;many-chptr-book&gt;</i>&#9251;<i class="meta">&lt;chapters&gt;</i> | <i class="meta">&lt;one-chptr-book&gt;</i>&#9251;<i class="meta">&lt;verses&gt;</i></td></tr>
+<tr><td align="right">  <i class="meta">&lt;many-chptr-book&gt;</i></td><td>&#8594;</td><td><tt>Genesis </tt>|<tt>  Exodus </tt>|<tt>  Leviticus </tt>|<tt>  Numbers </tt>|<tt>  ...</tt></td></tr>
+<tr><td align="right">  <i class="meta">&lt;one-chptr-book&gt;</i></td><td>&#8594;</td><td><tt>Obadiah </tt>|<tt>  Philemon </tt>|<tt>  2 John </tt>|<tt>  3 John </tt>|<tt>  Jude</tt></td></tr>
+<tr><td align="right">  <i class="meta">&lt;chapters&gt;</i></td><td>&#8594;</td><td><i class="meta">&lt;chref&gt;</i><tt>,</tt>&#9251;<i class="meta">&lt;chref&gt;</i><tt>,...,</tt>&#9251;<i class="meta">&lt;chref&gt;</i></td></tr>
+<tr><td align="right">  <i class="meta">&lt;chref&gt;</i></td><td>&#8594;</td><td><i class="meta">&lt;chapter&gt;</i> | <i class="meta">&lt;chapter&gt;</i><tt>-</tt><i class="meta">&lt;chapter&gt;</i> | <i class="meta">&lt;chapter&gt;</i><tt>:</tt><i class="meta">&lt;verses&gt;</i> | </td></tr>
+<tr><td align="right">  </td><td></td><td><tt>&#8195;&#8195;&#8195;&#8195;</tt><i class="meta">&lt;chapter&gt;</i><tt>:</tt><i class="meta">&lt;verse&gt;</i><tt>-</tt><i class="meta">&lt;chapter&gt;</i><tt>:</tt><i class="meta">&lt;verse&gt;</i></td></tr>
+<tr><td align="right">  <i class="meta">&lt;verses&gt;</i></td><td>&#8594;</td><td><i class="meta">&lt;vref&gt;</i><tt>,</tt><i class="meta">&lt;vref&gt;</i><tt>,...,</tt><i class="meta">&lt;vref&gt;</i></td></tr>
+<tr><td align="right">  <i class="meta">&lt;vref&gt;</i></td><td>&#8594;</td><td><i class="meta">&lt;verse&gt;</i> | <i class="meta">&lt;verse&gt;</i><tt>-</tt><i class="meta">&lt;verse&gt;</i></td></tr></tbody></table></div>
+
+
+<p>In those syntax rules, <i class="meta">&lt;chapter&gt;</i> and <i class="meta">&lt;verse&gt;</i> stand for arabic
+numbers denoting a valid chapter number for the given book, and a valid
+verse number for the given chapter, respectively.
+Note that when referencing a book that has only one chapter,
+one should list only its verses after the book name
+(rather than <tt>1:</tt><i class="meta">&lt;verses&gt;</i>).</p>
+
+<h3><a name="sec5.2">5.2 Verses and Choruses</a></h3>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.beginverse"><tt class="lmar">\beginverse</tt></a><br>
+<a name="mac.endverse"><tt class="lmar">\endverse</tt></a><br>
+<a name="mac.beginchorus"><tt class="lmar">\beginchorus</tt></a><br>
+<a name="mac.endchorus"><tt class="lmar">\endchorus</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec5.2.0.1">Starting A Verse Or Chorus.</a></b> &nbsp;Between the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> and <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.endsong"><tt>\endsong</tt></a> lines of a song can
+appear any number of verses and choruses.
+A verse begins and ends with:</p>
+
+<blockquote><pre><tt>\beginverse</tt>
+&#8942;
+<tt>\endverse</tt>
+</pre></blockquote>
+
+<p>and a chorus begins and ends with:</p>
+
+<blockquote><pre><tt>\beginchorus</tt>
+&#8942;
+<tt>\endchorus</tt>
+</pre></blockquote>
+
+
+<p>Verses are numbered (unless <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.noversenumbers"><tt>\noversenumbers</tt></a> has been used to
+suppress verse numbering) whereas choruses have a vertical line placed to
+their left.</p>
+
+<p>To create an unnumbered verse, begin the verse with <tt>\beginverse*</tt> instead.
+This can be used for things that aren't really verses but should be
+typeset like a verse (e.g.&nbsp;intros, endings, and the like).
+A verse that starts with <tt>\beginverse*</tt> should still end with <tt>\endverse</tt>
+(not <tt>\endverse*</tt>).</p>
+
+<p>Within a verse or chorus you should enter one line of text for
+each line of lyrics.
+Each line of the source document produces a separate line in the resulting
+document (like LaTeX's <tt>\obeylines</tt> macro).
+Lines that are too long to fit are wrapped with hanging indentation
+of width <tt>\parindent</tt>.</p>
+
+<h3><a name="sec5.3">5.3 Chords</a></h3>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.B"><tt class="lmar">\[</tt></a><br>
+<tt class="lmar">#</tt><br>
+<tt class="lmar">&amp;</tt><br>
+</td><td valign="top">
+<p>Between the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginverse"><tt>\beginverse</tt></a> and <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.endverse"><tt>\endverse</tt></a> lines, or between
+the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginchorus"><tt>\beginchorus</tt></a> and <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.endchorus"><tt>\endchorus</tt></a> lines,
+chords can be produced using the macro <tt>\[</tt><i class="meta">&lt;chordname&gt;</i><tt>]</tt>.
+Chords only appear in chord books; they are omitted from lyric books.
+The <i class="meta">&lt;chordname&gt;</i> may consist of arbitrary text.
+To produce sharp and flat symbols, use <tt>#</tt> and <tt>&amp;</tt> respectively.</p>
+
+<p>Any text that immediately follows the <tt>\[]</tt> macro with no
+intervening whitespace is assumed to be the word or syllable
+that is to be sung as the chord is struck, and is therefore
+typeset directly under the chord.
+For example:</p>
+
+<blockquote><p><tt>\[E&amp;]peace and \[Am]joy</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces1.gif" alt="document fragment"></p></blockquote>
+
+
+
+<p>If whitespace (a space or <i class="meta">&lt;return&gt;</i>) immediately follows,
+then the chord name be typeset without any lyric text
+below it, indicating that the chord is to be struck between
+any surrounding words.
+For example:</p>
+
+<blockquote><p><tt>\[E&amp;]peace and \[Am] joy</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces2.gif" alt="document fragment"></p></blockquote>
+
+
+<p>If the lyric text that immediately follows the chord contains
+another chord, and if the width of the chord name exceeds the
+width of the lyric text, then hyphenation is added automatically.
+For example:</p>
+
+<blockquote><p><tt>\[F#sus4]e\[A]ternal</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces3.gif" alt="document fragment"></p></blockquote>
+
+
+<p>Sequences of chords that sit above a single word can be written
+back-to-back with no intervening space, or as a single chord:</p>
+
+<blockquote><p><tt>\[A]\[B]\[Em]joy</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces4.gif" alt="document fragment"></p></blockquote>
+<blockquote><p><tt>\[A B Em]joy</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces4.gif" alt="document fragment"></p></blockquote>
+
+
+
+<p>The only difference between the two examples above is that the chords
+in the first example can later be replayed separately (see
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.4">section 5.4</a>) whereas the chords in the second example can only be
+replayed as a group.</p>
+
+<p>You can explicitly dictate how much of the text following a
+chord macro is to appear under the chord name by using braces.
+To exclude text that would normally be drawn under the chord,
+use a pair of braces that includes the chord macro.
+For example:</p>
+
+<blockquote><p><tt>{\[G A]e}ternal</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces5.gif" alt="document fragment"></p></blockquote>
+
+
+
+<p>(Without the braces, the syllables "ternal" would not be
+pushed out away from the chord.)
+This might be used to indicate that the chord transition occurs
+on the first syllable rather than as the second syllable is
+sung.</p>
+
+<p>Contrastingly, braces that do not include the chord itself can
+be used to include text under a chord that would otherwise be
+excluded.
+For example:</p>
+
+<blockquote><p><tt>\[Gmaj7sus4]{th’ eternal}</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces6.gif" alt="document fragment"></p></blockquote>
+
+
+
+<p>Without the braces, the word "eternal" would be pushed out away
+from the chord so that the chord would appear only over
+the partial word "th'&#8201;".</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.nolyrics"><tt class="lmar">\nolyrics</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec5.3.0.1">Chords Without Lyrics.</a></b> &nbsp;Sometimes you may want to write a line of chords with no lyrics in it at all,
+such as for an instrumental intro or solo.
+To make the chords in such a line sit on the baseline instead of raised above
+it, use the <tt>\nolyrics</tt> macro.
+For example:</p>
+
+<blockquote><p><tt>{\nolyrics Intro: \[G] \[A] \[D]}</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces7.gif" alt="document fragment"></p></blockquote>
+
+
+
+<p>Note the enclosing braces that determine how long the effect should last.
+Multiple lines can be included in the braces.
+Instrumental solos should typically not appear in lyric books, so such
+lines should usually also be surrounded by <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.ifchorded"><tt>\ifchorded</tt></a> and <tt>\fi</tt>
+(see <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.4">section 11.4</a>).</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.DeclareLyricChar"><tt class="lmar">\DeclareLyricChar</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec5.3.0.2">Symbols Under Chords.</a></b> &nbsp;If you are typesetting songs in a language whose alphabet contains symbols
+that LaTeX treats as punctuation, you can use the <tt>\DeclareLyricChar</tt>
+macro to instruct the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package to treat the symbol as
+non-chord-ending, so that it is included under chords by default just
+like an alphabetic character.</p>
+
+<blockquote><pre><tt>\DeclareLyricChar{</tt><i class="meta">&lt;token&gt;</i><tt>}</tt>
+</pre></blockquote>
+
+
+<p>Here, <i class="meta">&lt;token&gt;</i> must be a single TeX macro control sequence,
+active character, letter (something TeX assigns catcode 11), or
+punctuation symbol (something TeX assigns catcode 12).
+For example, by default,</p>
+
+<blockquote><p><tt>\[Fmaj7]s\dag range</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces8.gif" alt="document fragment"></p></blockquote>
+
+
+
+<p>because <tt>\dag</tt> is not recognized as an alphabetic symbol;
+but if you first type,</p>
+
+<blockquote><pre><tt>\DeclareLyricChar{\dag}</tt>
+</pre></blockquote>
+
+
+<p>then instead you will get:</p>
+
+
+<blockquote><p><tt>\[Fmaj7]s\dag range</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces9.gif" alt="document fragment"></p></blockquote>
+
+
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.DeclareNonLyric"><tt class="lmar">\DeclareNonLyric</tt></a><br>
+</td><td valign="top">
+<p>Likewise, you can type</p>
+
+<blockquote><pre><tt>\DeclareNonLyric{</tt><i class="meta">&lt;token&gt;</i><tt>}</tt>
+</pre></blockquote>
+
+
+<p>to reverse the above effect and force a token to be lyric-ending.
+Such tokens are pushed out away from long chord names so that they
+never fall under a chord, and hyphenation is added to the resulting gap.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.DeclareNoHyphen"><tt class="lmar">\DeclareNoHyphen</tt></a><br>
+</td><td valign="top">
+<p>To declare a token to be lyric-ending but without the added hyphenation,
+use <tt>\DeclareNoHyphen{</tt><i class="meta">&lt;token&gt;</i><tt>}</tt> instead.
+Such tokens are pushed out away from long chord names so that they never
+fall under the chord, but hyphenation is not added to the resulting gap.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.MultiwordChords"><tt class="lmar">\MultiwordChords</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec5.3.0.3">Extending Chords Over Adjacent Words.</a></b> &nbsp;The <tt>\MultiwordChords</tt> macro forces multiple words to be squeezed under one
+chord by default.
+Normally a long chord atop a short lyric pushes subsequent
+lyrics away to make room for the chord:</p>
+
+<blockquote><p><tt>\[Gmaj7sus4]my life</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces10.gif" alt="document fragment"></p></blockquote>
+
+
+
+<p>But if you first type <tt>\MultiwordChords</tt>, then instead you get the more
+compact:</p>
+
+
+<blockquote><p><tt>\[Gmaj7sus4]my life</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces11.gif" alt="document fragment"></p></blockquote>
+
+
+
+
+<p>Authors should exercise caution when using <tt>\MultiwordChords</tt> because
+including many words under a single chord can often produce output that
+is ambiguous or misleading to musicians.
+For example,</p>
+
+
+<blockquote><p><tt>\[F G Am]me free</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces12.gif" alt="document fragment"></p></blockquote>
+
+
+
+
+<p>This might be misleading to musicians if all three chords are intended
+to be played while singing the word "me."
+Liberal use of braces is therefore required to make <tt>\MultiwordChords</tt>
+produce good results, which is why it isn't the default.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.shrp"><tt class="lmar">\shrp</tt></a><br>
+<a name="mac.flt"><tt class="lmar">\flt</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec5.3.0.4">Accidentals Outside Chords.</a></b> &nbsp;Sharp and flat symbols can be produced with <tt>#</tt> and <tt>&amp;</tt> when they appear
+in chord macros, but if you wish to produce those symbols in
+other parts of the document, you must use the <tt>\shrp</tt> and <tt>\flt</tt> macros.
+For example, to define a macro that produces a <i>C#</i> chord, use:</p>
+
+<blockquote><pre><tt>\newcommand{\Csharp}{C\shrp}</tt>
+</pre></blockquote>
+
+<h3><a name="sec5.4">5.4 Replaying Chords and Choruses</a></h3>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<tt class="lmar">^</tt><br>
+</td><td valign="top">
+<p>Many songs consist of multiple verses that use the same chords.
+The <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package simplifies this common case by providing a means to
+replay the chord sequence of a previous verse without having to retype
+all the chords.
+To replay a chord from a previous verse, type a hat symbol (<tt>^</tt>) anywhere
+you would otherwise use a chord macro (<tt>\[]</tt>).
+For example,</p>
+
+<blockquote><pre><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginverse"><tt>\beginverse</tt></a>
+<tt>\[G]This is the \[C]first \[G]verse.</tt>
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.endverse"><tt>\endverse</tt></a>
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginverse"><tt>\beginverse</tt></a>
+<tt>The ^second verse ^ has the same ^chords.</tt>
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.endverse"><tt>\endverse</tt></a>
+</pre></blockquote>
+
+<p>produces</p>
+
+<p class="center"><img src="./Songs Package Documentation_files/chorded1.gif" alt="document fragment"></p>
+<p class="center"><img src="./Songs Package Documentation_files/chorded2.gif" alt="document fragment"></p>
+
+<p>Normal chords can appear amidst replayed chords without disrupting the
+sequence of chords being replayed.
+Thus, a third verse could say,</p>
+
+<blockquote><pre><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginverse"><tt>\beginverse</tt></a>
+<tt>The ^third verse ^has a \[Cm]new ^chord.</tt>
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.endverse"><tt>\endverse</tt></a>
+</pre></blockquote>
+
+<p>to produce</p>
+
+<p class="center"><img src="./Songs Package Documentation_files/chorded3.gif" alt="document fragment"></p>
+
+<p>Replaying can be used in combination with automatic transposition to produce
+modulated verses.
+See <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec7">section 7</a> for an example.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.memorize"><tt class="lmar">\memorize</tt></a><br>
+</td><td valign="top">
+<p>By default, chords are replayed from the current song's first verse, but
+you can replay the chords of a different verse or chorus by saying
+<tt>\memorize</tt> at the beginning of any verse or chorus whose chords you want
+to later replay.
+Subsequent verses or choruses that use <tt>^</tt> replay chords
+from the most recently memorized verse or chorus.</p>
+
+<p><b><a name="sec5.4.0.1">Selective Memorization.</a></b> &nbsp;It is also possible to inject unmemorized chords into a memorized verse
+so that they are not later replayed.
+To suppress memorization of a chord, begin the chord's name with a hat
+symbol.
+For example,</p>
+
+<blockquote><pre><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginverse"><tt>\beginverse</tt></a><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.memorize"><tt>\memorize</tt></a>
+<tt>The \[G]third \[C]chord will \[^Cm]not be re\[G]played.</tt>
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.endverse"><tt>\endverse</tt></a>
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginverse"><tt>\beginverse</tt></a>
+<tt>When ^replaying, the ^unmemorized chord is ^skipped.</tt>
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.endverse"><tt>\endverse</tt></a>
+</pre></blockquote>
+
+<p>produces</p>
+
+<p class="center"><img src="./Songs Package Documentation_files/chorded4.gif" alt="document fragment"></p>
+
+
+<p>This is useful when the first verse of a song has something unique,
+like an intro that won't be repeated in subsequent verses, but has
+other chords that you wish to replay.</p>
+
+<p><b><a name="sec5.4.0.2">Memorizing Multiple Chord Sequences.</a></b> &nbsp;By default, the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package only memorizes one sequence of chords
+at a time and <tt>^</tt> replays chords from that most recently
+memorized sequence.
+However, you can memorize and replay multiple independent sequences
+using the macros described in the following paragraphs.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.newchords"><tt class="lmar">\newchords</tt></a><br>
+</td><td valign="top">
+<p>Memorized or replayed chord sequences are stored in chord-replay registers.
+To declare a new chord-replay register, type</p>
+
+<blockquote><pre><tt>\newchords{</tt><i class="meta">&lt;regname&gt;</i><tt>}</tt>
+</pre></blockquote>
+
+
+<p>where <i class="meta">&lt;regname&gt;</i> is any unique alphabetic name.</p>
+
+<p>Once you've declared a register, you can memorize into that register
+by providing the <i class="meta">&lt;regname&gt;</i> as an optional argument to
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.memorize"><tt>\memorize</tt></a>:</p>
+
+<blockquote><pre><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.memorize"><tt>\memorize</tt></a><tt>[</tt><i class="meta">&lt;regname&gt;</i><tt>]</tt>
+</pre></blockquote>
+
+
+<p>Memorizing into a non-empty register replaces the contents of that
+register with the new chord sequence.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.replay"><tt class="lmar">\replay</tt></a><br>
+</td><td valign="top">
+<p>To replay chords from a particular register, type</p>
+
+<blockquote><pre><tt>\replay[</tt><i class="meta">&lt;regname&gt;</i><tt>]</tt>
+</pre></blockquote>
+
+
+<p>Subsequent uses of <tt>^</tt> reproduce chords from the sequence
+stored in register <i class="meta">&lt;regname&gt;</i>.</p>
+
+<p>Register contents are global, so you can memorize a chord sequence from one
+song and replay it in others.
+You can also use <tt>\replay</tt> multiple times in the same verse or chorus to
+replay a sequence more than once.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.repchoruses"><tt class="lmar">\repchoruses</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec5.4.0.3">Replaying Choruses.</a></b> &nbsp;When making overhead slides, it is often convenient to repeat the song's
+chorus after the first verse on each page, so that the projector-operator
+need not flip back to the first slide each time the chorus is to be sung.
+You can say <tt>\repchoruses</tt> to automate this process.
+This causes the first chorus in each subsequent song to be automatically
+repeated after the first verse on each subsequent page of the song (unless
+that verse is already immediately followed by a chorus).
+If the first chorus is part of a set of two or more consecutive choruses,
+then the whole set of choruses is repeated.
+(A set of choruses is assumed to consist of things like pre-choruses that
+should always be repeated along with the chorus.)
+Choruses are not automatically inserted immediately after unnumbered
+verses (i.e., verses that begin with <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginverse"><tt>\beginverse</tt></a><tt>*</tt>).
+Unnumbered verses are assumed to be bridges or endings that aren't
+followed by a chorus.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.norepchoruses"><tt class="lmar">\norepchoruses</tt></a><br>
+</td><td valign="top">
+<p>Writing <tt>\norepchoruses</tt> turns off chorus repetition for subsequent songs.</p>
+
+<p>If you need finer control over where replayed choruses appear, use the
+conditional macros covered in <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.4">section 11.4</a> instead of
+<tt>\repchoruses</tt>.
+For example, to manually insert a chorus into only slide books at a
+particular point (without affecting other versions of your book),
+you could write:</p>
+
+<blockquote><pre><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.ifslides"><tt>\ifslides</tt></a>
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginchorus"><tt>\beginchorus</tt></a>
+&#8942;
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.endchorus"><tt>\endchorus</tt></a>
+<tt>\fi</tt>
+</pre></blockquote>
+
+
+<p>and copy and paste the desired chorus into the middle.</p>
+
+<h3><a name="sec5.5">5.5 Line and Column Breaks</a></h3>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.brk"><tt class="lmar">\brk</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec5.5.0.1">Line Breaking.</a></b> &nbsp;To cause a long line of lyrics to be broken in a particular place, put the
+<tt>\brk</tt> macro at that point in the line.
+This does not affect lines short enough to fit without breaking.
+For example,</p>
+
+<blockquote><p style="line-height: 1"><tt>\beginverse<br>
+This is a \brk short line.<br>
+ But this is a particularly long line of lyrics \brk that will need to be wrapped.<br>
+\endverse<br>
+</tt></p></blockquote>
+
+<p>produces</p>
+
+<p class="center"><img src="./Songs Package Documentation_files/lyrics1.gif" alt="document fragment"></p>
+
+<p><b><a name="sec5.5.0.2">Column Breaks Within Songs.</a></b> &nbsp;To suggest a column break within a verse or chorus too long to fit in a
+single column, use <tt>\brk</tt> on a line by itself.
+If there are no <tt>\brk</tt> lines in a long verse, it is broken
+somewhere that a line does not wrap.
+(A wrapped line is never divided by a column break.)
+If there are no <tt>\brk</tt> lines in a long chorus, it overflows the column,
+yielding an overfull vbox warning.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.nextcol"><tt class="lmar">\nextcol</tt></a><br>
+<a name="mac.sclearpage"><tt class="lmar">\sclearpage</tt></a><br>
+<a name="mac.scleardpage"><tt class="lmar">\scleardpage</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec5.5.0.3">Column Breaks Between Songs.</a></b> &nbsp;To force a column break between songs, use <tt>\nextcol</tt>, <tt>\brk</tt>, <tt>\sclearpage</tt>,
+or <tt>\scleardpage</tt> between songs.
+The <tt>\nextcol</tt> macro ends the column by leaving blank space at the bottom.
+The <tt>\brk</tt> macro ends the current column in lyric books by stretching
+the preceeding text so that the column ends flush with the bottom
+of the page.
+(In non-lyric books <tt>\brk</tt> is identical to <tt>\nextcol</tt>.)
+The <tt>\sclearpage</tt> macro is like <tt>\nextcol</tt> except that it shifts to the next
+blank page if the current page is nonempty.
+The <tt>\scleardpage</tt> macro is like <tt>\sclearpage</tt> except that it shifts to the
+next blank even-numbered page in two-sided documents.
+Column breaks usually need to be in different places in different book types.
+To achieve this, use a conditional block from <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.4">section 11.4</a>.
+For example,</p>
+
+<blockquote><pre><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.ifchorded"><tt>\ifchorded</tt></a><tt>\else</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.ifslides"><tt>\ifslides</tt></a><tt>\else\brk\fi\fi</tt>
+</pre></blockquote>
+
+
+<p>forces a column break only in lyric books but does not affect chord books
+or books of overhead slides.</p>
+
+<p>When a partial list of songs is being extracted with <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.includeonlysongs"><tt>\includeonlysongs</tt></a>,
+<tt>\brk</tt>, <tt>\nextcol</tt>, <tt>\clearpage</tt>, and <tt>\cleardpage</tt> macros between songs
+must be followed by a star to have any effect.
+To force a column-break at a specific point in a partial book, add the
+word <tt>nextcol</tt>, <tt>brk</tt>, <tt>clearpage</tt>, or <tt>cleardpage</tt> at the corresponding
+point in the argument to <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.includeonlysongs"><tt>\includeonlysongs</tt></a>.</p>
+
+<h3><a name="sec5.6">5.6 Echoes and Repeats</a></h3>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.echo"><tt class="lmar">\echo</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec5.6.0.1">Echo Parts.</a></b> &nbsp;To typeset an echo part, use <tt>\echo{</tt><i class="meta">&lt;lyrics and chords&gt;</i><tt>}</tt>.
+Echo parts are parenthesized and italicized.
+For example,</p>
+
+<blockquote><p><tt>Alle\[G]luia! \echo{Alle\[A]luia!}</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces13.gif" alt="document fragment"></p></blockquote>
+
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.rep"><tt class="lmar">\rep</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec5.6.0.2">Repeated Lines.</a></b> &nbsp;To indicate that a line should be sung multiple times by all singers, put
+<tt>\rep{</tt><i class="meta">&lt;n&gt;</i><tt>}</tt> at the end of the line.
+For example,</p>
+
+<blockquote><p><tt>Alleluia! \rep{4}</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces14.gif" alt="document fragment"></p></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.lrep"><tt class="lmar">\lrep</tt></a><br>
+<a name="mac.rrep"><tt class="lmar">\rrep</tt></a><br>
+</td><td valign="top">
+<p>To indicate exactly where repeated parts begin and end, use <tt>\lrep</tt> and
+<tt>\rrep</tt> to create begin- and end-repeat signs.
+For example,</p>
+
+<blockquote><p><tt>\lrep \[G]Alleluia!\rrep \rep{4}</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces15.gif" alt="document fragment"></p></blockquote>
+
+
+<h3><a name="sec5.7">5.7 Measure Bars</a></h3>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.measurebar"><tt class="lmar">\measurebar</tt></a><br>
+<tt class="lmar">|</tt><br>
+</td><td valign="top">
+<p>Measure bars can be added to chord books in order to help musicians
+keep time when playing unfamiliar songs.
+To insert a measure bar, type either <tt>\measurebar</tt> or type the
+vertical pipe symbol ("<tt>|</tt>").
+For example,</p>
+
+<blockquote><p><tt>Alle|\[G]luia</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces16.gif" alt="document fragment"></p></blockquote>
+
+
+
+<p>In order for measure bars to be displayed, the <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.showmeasures"><tt>showmeasures</tt></a>
+option must be enabled.
+Measure bars are only displayed by default in chord books.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.meter"><tt class="lmar">\meter</tt></a><br>
+</td><td valign="top">
+<p>The first measure bar in a song has meter numbers placed above
+it to indicate the time signature of the piece.
+By default, these numbers are 4/4, denoting four quarter notes
+per measure.
+To change the default, type <tt>\meter{</tt><i class="meta">&lt;n&gt;</i><tt>}{</tt><i class="meta">&lt;d&gt;</i><tt>}</tt>
+somewhere after the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> line of the song but before the
+first measure bar, to declare a time signature of <i class="meta">&lt;n&gt;</i> <i class="meta">&lt;d&gt;</i>th
+notes per measure.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.mbar"><tt class="lmar">\mbar</tt></a><br>
+</td><td valign="top">
+<p>You can also change meters mid-song either by using <tt>\meter</tt> in the
+middle of the song or by typing <tt>\mbar{</tt><i class="meta">&lt;n&gt;</i><tt>}{</tt><i class="meta">&lt;d&gt;</i><tt>}</tt>
+to produce a measure bar with a time signature of <i class="meta">&lt;n&gt;</i>/<i class="meta">&lt;d&gt;</i>.
+For example,</p>
+
+<blockquote><pre><tt>\meter{6}{8}</tt>
+<tt>\beginverse</tt>
+<tt>Sing to the heavens, ye \mbar{4}{4}saints of |old!</tt>
+<tt>\endverse</tt>
+</pre></blockquote>
+
+<p>produces</p>
+
+<p class="center"><img src="./Songs Package Documentation_files/chorded5.gif" alt="document fragment"></p>
+
+<h3><a name="sec5.8">5.8 Textual Notes</a></h3>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.textnote"><tt class="lmar">\textnote</tt></a><br>
+<a name="mac.musicnote"><tt class="lmar">\musicnote</tt></a><br>
+</td><td valign="top">
+<p>Aside from verses and choruses, songs can also contain textual notes
+that provide instructions to singers and musicians.
+To create a textual note that is displayed in both lyric books
+and chord books, use:</p>
+
+<blockquote><pre><tt>\textnote{</tt><i class="meta">&lt;text&gt;</i><tt>}</tt>
+</pre></blockquote>
+
+
+<p>To create a textual note that is displayed only in chord books, use:</p>
+
+<blockquote><pre><tt>\musicnote{</tt><i class="meta">&lt;text&gt;</i><tt>}</tt>
+</pre></blockquote>
+
+
+<p>Both of these create a shaded box containing <i class="meta">&lt;text&gt;</i>.
+For example,</p>
+
+<blockquote><pre><tt>\textnote{Sing as a two-part round.}</tt>
+</pre></blockquote>
+
+<p>produces</p>
+
+<p class="center"><img src="./Songs Package Documentation_files/lyrics2.gif" alt="document fragment"></p>
+
+
+<p>Textual notes can be placed anywhere within a song, either within
+verses and choruses or between them.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.capo"><tt class="lmar">\capo</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec5.8.0.1">Guitar Capos.</a></b> &nbsp;One special kind of textual note suggests to guitarists a fret on which
+they should put their capos.
+Macro <tt>\capo{</tt><i class="meta">&lt;n&gt;</i><tt>}</tt> should be used for this purpose.
+It normally has the same effect as <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.musicnote"><tt>\musicnote</tt></a><tt>{capo </tt><i class="meta">&lt;n&gt;</i><tt>}</tt>;
+however, if the <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.transposecapos"><tt>transposecapos</tt></a> option is active then it
+instead has the effect of <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.transpose"><tt>\transpose</tt></a><tt>{</tt><i class="meta">&lt;n&gt;</i><tt>}</tt>.
+See <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec7">section 7</a> for more information on automatic chord
+transposition.</p>
+
+<h3><a name="sec5.9">5.9 Chords in Ligatures</a></h3>
+
+<p>This subsection covers an advanced topic and can probably be
+skipped by those creating song books for non-professional use.</p>
+
+<p>The <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.B"><tt>\[</tt></a> macro is the normal means by which chords should be inserted
+into a song; however, a special case occurs when a chord falls within a
+ligature.
+Ligatures are combinations of letters or symbols that TeX normally
+typesets as a single font character so as to produce cleaner-looking
+output.
+The only ligatures in English are: ff, fi, fl, ffi, and ffl.
+Other languages have additional ligatures like æ and œ.
+Notice that in each of these cases, the letters are "squished"
+together to form a single composite symbol.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.ch"><tt class="lmar">\ch</tt></a><br>
+</td><td valign="top">
+<p>When a chord macro falls inside a ligature, LaTeX fails to compact
+the ligature into a single font character even in non-chorded versions of
+the book.
+To avoid this minor typographical error, use the <tt>\ch</tt> macro to typeset
+the chord:</p>
+
+<blockquote><pre><tt>\ch{</tt><i class="meta">&lt;chord&gt;</i><tt>}{</tt><i class="meta">&lt;pre&gt;</i><tt>}{</tt><i class="meta">&lt;post&gt;</i><tt>}{</tt><i class="meta">&lt;full&gt;</i><tt>}</tt>
+</pre></blockquote>
+
+
+<p>where <i class="meta">&lt;chord&gt;</i> is the chord text, <i class="meta">&lt;pre&gt;</i> is the text to
+appear before the hyphen if the ligature is broken by auto-hyphenation,
+<i class="meta">&lt;post&gt;</i> is the text to appear after the hyphen if the ligature
+is broken by auto-hyphenation, and <i class="meta">&lt;full&gt;</i> is the full ligature
+if it is not broken by hyphenation.
+For example, to correctly typeset <tt>\[Gsus4]dif\[G]ficult</tt>,
+in which the <i>G</i> chord falls in the middle of the "ffi"
+ligature, one should use:</p>
+
+<blockquote><p><tt>di\ch{G}{f}{fi}{ffi}cult</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces17.gif" alt="document fragment"></p></blockquote>
+
+
+<p>This causes the "ffi" ligature to appear intact yet still correctly
+places the <i>G</i> chord over the second f.
+To use the <tt>\ch</tt> macro with a replayed chord name (see <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.4">section 5.4</a>),
+use <tt>^</tt> as the <i class="meta">&lt;chord&gt;</i>.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.mch"><tt class="lmar">\mch</tt></a><br>
+</td><td valign="top">
+<p>The <tt>\mch</tt> macro is exactly like the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.ch"><tt>\ch</tt></a> macro except that it
+also places a measure bar into the ligature along with the chord.
+For example,</p>
+
+<blockquote><p><tt>di\mch{G}{f}{fi}{ffi}cult</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces18.gif" alt="document fragment"></p></blockquote>
+
+
+<p>places both a measure bar and a <i>G</i> chord after the first "f"
+in "difficult", yet correctly produces an unbroken "ffi" ligature
+in copies of the book in which measure bars are not displayed.</p>
+
+<p>In the unusual case that a meter change is required within a
+ligature, this can be achieved with a construction like:</p>
+
+<blockquote><p><tt>\meter{6}{8}di\mch{G}{f}{fi}{ffi}cult</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces19.gif" alt="document fragment"></p></blockquote>
+
+
+<p>The <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.meter"><tt>\meter</tt></a> macro sets the new time signature, which appears
+above the next measure bar—in this case the measure bar
+produced by the <tt>\mch</tt> macro.</p>
+
+<p>Chords and measure bars produced with <tt>^</tt> or
+<tt>|</tt> are safe to use in ligatures.
+Thus, <tt>dif</tt><tt>|</tt><tt>^</tt><tt>ficult</tt> requires
+no special treatment; it leaves the "ffi" ligature intact when measure
+bars are not being displayed.</p>
+
+<h2><a name="sec6">6 Guitar Tablatures</a></h2>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.gtab"><tt class="lmar">\gtab</tt></a><br>
+</td><td valign="top">
+<p>Guitar tablature diagrams can be created by using the construct</p>
+
+<blockquote><pre><tt>\gtab{</tt><i class="meta">&lt;chord&gt;</i><tt>}{</tt><i class="meta">&lt;fret&gt;</i><tt>:</tt><i class="meta">&lt;strings&gt;</i><tt>:</tt><i class="meta">&lt;fingering&gt;</i><tt>}</tt>
+</pre></blockquote>
+
+
+<p>where the <i class="meta">&lt;fret&gt;</i> and <i class="meta">&lt;fingering&gt;</i> parts are both optional
+(and you may omit any colon that borders an omitted argument).</p>
+
+<p><i class="meta">&lt;chord&gt;</i> is a chord name to be placed above the diagram.</p>
+
+<p><i class="meta">&lt;fret&gt;</i> is an optional digit from 2 to 9 placed to the
+left of the diagram.</p>
+
+<p><i class="meta">&lt;strings&gt;</i> should be a series of symbols, one for each string
+of the guitar from lowest pitch to highest.
+Each symbol should be one of:
+<tt>X</tt> if that string is not to be played,
+<tt>0</tt> (zero or the letter O) if that string is to be played open, or
+one of <tt>1</tt> through <tt>9</tt> if that string is to be played on the given
+numbered fret.</p>
+
+<p><i class="meta">&lt;fingering&gt;</i> is an optional series of digits, one for each
+string of the guitar from lowest pitch to highest.
+Each digit should be one of:
+<tt>0</tt> if no fingering information is to be displayed for that string (e.g., if
+the string is not being played or is being played open), or
+one of <tt>1</tt> through <tt>4</tt> to indicate that the given numbered finger is to be
+used to hold down that string.</p>
+
+<p>Here are some examples to illustrate:</p>
+
+<blockquote><p><tt>\gtab{A}{X02220:001230}</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces20.gif" alt="document fragment"></p></blockquote>
+<blockquote><p><tt>\gtab{C#sus4}{4:XX3341}</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces21.gif" alt="document fragment"></p></blockquote>
+<blockquote><p><tt>\gtab{B&amp;}{X13331}</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces22.gif" alt="document fragment"></p></blockquote>
+
+<p>To create a barre chord in which one finger is extended across multiple
+strings, use parentheses <tt>()</tt> or brackets <tt>[]</tt> in the <i class="meta">&lt;strings&gt;</i>
+argument to group the barred strings.
+Each such group will draw a barre on the lowest numbered fret it contains.
+For example:</p>
+
+<blockquote><p><tt>\gtab{C7}{X(3535X):013140}</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces23.gif" alt="document fragment"></p></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.minfrets"><tt class="lmar">\minfrets</tt></a><br>
+</td><td valign="top">
+<p>By default, tablature diagrams always consist of at least 4 fret rows
+(more if the <i class="meta">&lt;strings&gt;</i> argument contains a number larger than 4).
+To change the minimum number of fret rows, change the value of <tt>\minfrets</tt>.
+For example, typing</p>
+
+<blockquote><pre><tt>\minfrets=1</tt>
+</pre></blockquote>
+
+
+<p>causes tablature diagrams to have only as many rows are required to
+accommodate the largest digit appearing in the <i class="meta">&lt;strings&gt;</i> argument.</p>
+
+<p><b><a name="sec6.0.0.1">Tablatures Within Macros</a></b> &nbsp;Macros that produce tablatures must not bury the colons that separate the
+<i class="meta">&lt;fret&gt;</i>, <i class="meta">&lt;strings&gt;</i>, and <i class="meta">&lt;fingering&gt;</i> arguments within other
+macros, and it's safest to always include both colons to avoid ambiguities
+related to optional argument parsing.
+For example,</p>
+
+<blockquote><pre><tt>\newcommand{\mystrings}{X4412X}</tt>
+<tt>\newcommand{\myfingers}{X3412X}</tt>
+<tt>\newcommand{\mychord}{</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.gtab"><tt>\gtab</tt></a><tt>{C</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.shrp"><tt>\shrp</tt></a><tt>}{:\mystrings:\myfingers}}</tt>
+</pre></blockquote>
+
+
+<p>works as expected.
+But omitting the colon before <tt>\mystrings</tt> in the definition of <tt>\mychord</tt>
+confuses <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.gtab"><tt>\gtab</tt></a> into thinking <tt>\mystrings</tt> is the <i class="meta">&lt;fret&gt;</i>
+argument, and writing code like <tt>\gtab{C\shrp}{\allargs}</tt> with <tt>\allargs</tt>
+defined to something with colons results in an error, because it confuses
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.gtab"><tt>\gtab</tt></a> into thinking that <tt>\allargs</tt> is only the <i class="meta">&lt;strings&gt;</i> argument.</p>
+
+<h2><a name="sec7">7 Automatic Transposition</a></h2>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.transpose"><tt class="lmar">\transpose</tt></a><br>
+</td><td valign="top">
+<p>You can automatically transpose some or all of the chords in a song up by
+<i class="meta">&lt;n&gt;</i> half-steps by adding the line</p>
+
+<blockquote><pre><tt>\transpose{</tt><i class="meta">&lt;n&gt;</i><tt>}</tt>
+</pre></blockquote>
+
+
+<p>somewhere between the song's <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> line and the first chord to
+be transposed.
+For example, if a song's first chord is <tt>\[D]</tt>, and the line
+<tt>\transpose{2}</tt> appears before it, then the chord appears as an
+<i>E</i> in the resulting document.
+Specifying a negative number for <i class="meta">&lt;n&gt;</i> transposes subsequent chords
+down instead of up.</p>
+
+<p>The <tt>\transpose</tt> macro affects all chords appearing after it until the
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.endsong"><tt>\endsong</tt></a> line.
+If two <tt>\transpose</tt> macros appear in the same song, their effects are
+cumulative.</p>
+
+<p>When the <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.transposecapos"><tt>transposecapos</tt></a> option is active, the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.capo"><tt>\capo</tt></a>
+macro acts like <tt>\transpose</tt>.
+See <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.8">section 5.8</a> for more information.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.preferflats"><tt class="lmar">\preferflats</tt></a><br>
+<a name="mac.prefersharps"><tt class="lmar">\prefersharps</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec7.0.0.1">Enharmonics.</a></b> &nbsp;When using <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.transpose"><tt>\transpose</tt></a> to automatically transpose the chords of a song,
+the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package code chooses between enharmonically equivalent
+names for "black key" notes based on the first chord of the song.
+For example, if <tt>\transpose{1}</tt> is used, and if the first chord of the
+song is an <i>E</i>, then all <i>A</i> chords that appear in
+the song are transcribed as <i>Bb</i> chords rather than
+<i>A#</i> chords, since the key of <i>F</i>-major (<i>E</i>
+transposed up by one half-step) has a flatted key signature.
+Usually this guess produces correct results, but if not, you can use
+either <tt>\preferflats</tt> or <tt>\prefersharps</tt> after the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.transpose"><tt>\transpose</tt></a> line
+to force all transcription to use flatted names or sharped names
+respectively, when resolving enharmonic equivalents.</p>
+
+<p><b><a name="sec7.0.0.2">Modulated Verses.</a></b> &nbsp;Automatic transposition can be used in conjunction with chord-replaying
+(see <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5.3">section 5.3</a>) to produce modulated verses.
+For example,</p>
+
+<blockquote><pre><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginverse"><tt>\beginverse</tt></a><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.memorize"><tt>\memorize</tt></a>
+<tt>\[F#]This is a \[B/F#]memorized \[F#]verse. \[E&amp;7]</tt>
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.endverse"><tt>\endverse</tt></a>
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.transpose"><tt>\transpose</tt></a><tt>{2}</tt>
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginverse"><tt>\beginverse</tt></a>
+<tt>^This verse is ^modulated up two ^half-steps.</tt>
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.endverse"><tt>\endverse</tt></a>
+</pre></blockquote>
+
+<p>produces</p>
+
+<p class="center"><img src="./Songs Package Documentation_files/chorded6.gif" alt="document fragment"></p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.trchordformat"><tt class="lmar">\trchordformat</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec7.0.0.3">Both Keys.</a></b> &nbsp;By default, when chords are automatically transposed using <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.transpose"><tt>\transpose</tt></a>,
+only the transposed chords are printed.
+However, in some cases you may wish to print the old chords and the
+transposed chords together so that musicians playing transposing and
+non-transposing instruments can play from the same piece of music.
+This can be achieved by redefining the <tt>\trchordformat</tt> macro, which
+receives two arguments—the original chord name and the transposed chord
+name, respectively.
+For example, to print the old chord above the new chord above each lyric,
+define</p>
+
+<blockquote><pre><tt>\renewcommand{\trchordformat}[2]{\vbox{\hbox{#1}\hbox{#2}}}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.solfedge"><tt class="lmar">\solfedge</tt></a><br>
+<a name="mac.alphascale"><tt class="lmar">\alphascale</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec7.0.0.4">Changing Note Names.</a></b> &nbsp;In many countries it is common to use the solfedge names for the notes of
+the scale (<i>LA, SI, DO, RE, MI, FA, SOL</i>) instead of the
+alphabetic names (<i>A, B, C, D, E, F, G</i>).
+By default, the transposition logic only understands alphabetic names, but
+you can tell it to look for solfedge names by typing <tt>\solfedge</tt>.
+To return to alphabetic names, type <tt>\alphascale</tt>.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.notenames"><tt class="lmar">\notenames</tt></a><br>
+</td><td valign="top">
+<p>You can use other note names as well.
+To define your own note names, type</p>
+
+<blockquote><pre><tt>\notenames{</tt><i class="meta">&lt;nameA&gt;</i><tt>}{</tt><i class="meta">&lt;nameB&gt;</i><tt>}</tt>...<tt>{</tt><i class="meta">&lt;nameG&gt;</i><tt>}</tt>
+</pre></blockquote>
+
+
+<p>where each of <i class="meta">&lt;nameA&gt;</i> through <i class="meta">&lt;nameG&gt;</i> must consist entirely of
+a sequence of one or more <i>uppercase</i> letters.
+For example, some solfedge musicians use <i>TI</i> instead of <i>SI</i>
+for the second note of the scale.
+To automatically transpose such music, use:</p>
+
+<blockquote><pre><tt>\notenames{LA}{TI}{DO}{RE}{MI}{FA}{SOL}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.notenamesin"><tt class="lmar">\notenamesin</tt></a><br>
+<a name="mac.notenamesout"><tt class="lmar">\notenamesout</tt></a><br>
+</td><td valign="top">
+<p>The <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package can also automatically convert one set of note names
+to another.
+For example, suppose you have a large song book in which chords have been
+typed using alphabetic note names, but you wish to produce a book that
+uses the equivalent solfedge names.
+You could achieve this by using the <tt>\notenamesin</tt> macro to tell the
+<b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package which note names you typed in the input file, and then
+using <tt>\notenamesout</tt> to tell the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package how you want it to
+typeset each note name in the output file.
+The final code looks like this:</p>
+
+<blockquote><pre><tt>\notenamesin{A}{B}{C}{D}{E}{F}{G}</tt>
+<tt>\notenamesout{LA}{SI}{DO}{RE}{MI}{FA}{SOL}</tt>
+</pre></blockquote>
+
+
+<p>The syntaxes of <tt>\notenamesin</tt> and <tt>\notenamesout</tt> are identical to that
+of <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.notenames"><tt>\notenames</tt></a> (see above), except that the arguments of <tt>\notenamesout</tt>
+can consist of any LaTeX code that is legal in horizontal mode, not just
+uppercase letters.</p>
+
+<p>To stop converting between note names, use <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.alphascale"><tt>\alphascale</tt></a>, <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.solfedge"><tt>\solfedge</tt></a>,
+or <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.notenames"><tt>\notenames</tt></a> to reset all note names back to identical input and
+output scales.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.transposehere"><tt class="lmar">\transposehere</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec7.0.0.5">Transposing Chords In Macros.</a></b> &nbsp;The automatic transposition logic does not find chord names that are hidden
+inside macro bodies.
+For example, if you abbreviate a chord by typing,</p>
+
+<blockquote><pre><tt>\newcommand{\mychord}{F</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.shrp"><tt>\shrp</tt></a><tt> sus4/C</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.shrp"><tt>\shrp</tt></a><tt>}</tt>
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.transpose"><tt>\transpose</tt></a><tt>{4}</tt>
+<tt>\[\mychord]</tt>
+</pre></blockquote>
+
+
+<p>then the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.transpose"><tt>\transpose</tt></a> macro fails to transpose it; the
+resulting chord is still an <i>F#sus4/C#</i> chord.
+To fix the problem, you can use <tt>\transposehere</tt> in your macros to
+explicitly invoke the transposition logic on chord names embedded in
+macro bodies.
+The above example could be corrected by instead defining:</p>
+
+<blockquote><pre><tt>\newcommand{\mychord}{\transposehere{F</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.shrp"><tt>\shrp</tt></a><tt> sus4/C</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.shrp"><tt>\shrp</tt></a><tt>}}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.notrans"><tt class="lmar">\notrans</tt></a><br>
+</td><td valign="top">
+<p>Transposition can be suppressed within material that would otherwise be
+transposed by using the <tt>\notrans</tt> macro.
+For example, writing</p>
+
+<blockquote><pre><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.transposehere"><tt>\transposehere</tt></a><tt>{G = \notrans{G}}</tt>
+</pre></blockquote>
+
+
+<p>would typeset a transposed <i>G</i> followed by a non-transposed
+<i>G</i> chord.
+This does not suppress note name conversion (see <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.notenames"><tt>\notenames</tt></a>).
+To suppress both transposition and note name conversion, just use
+braces (e.g., <tt>{G}</tt> instead of <tt>\notrans{G}</tt>).</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.gtabtrans"><tt class="lmar">\gtabtrans</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec7.0.0.6">Transposing Guitar Tablatures.</a></b> &nbsp;The songs package cannot automatically transpose tablature diagrams
+(see <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec6">section 6</a>).
+Therefore, when automatic transposition is taking place, only the chord
+names of <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.gtab"><tt>\gtab</tt></a> macros are displayed (and transposed); the diagrams
+are omitted.
+To change this default, redefine the <tt>\gtabtrans</tt> macro, whose two
+arguments are the two arguments to <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.gtab"><tt>\gtab</tt></a>.
+For example, to display original tablatures without transposing them even
+when transposition has been turned on, write</p>
+
+<blockquote><pre><tt>\renewcommand{\gtabtrans}[2]{</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.gtab"><tt>\gtab</tt></a><tt>{</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.notrans"><tt>\notrans</tt></a><tt>{#1}}{#2}}</tt>
+</pre></blockquote>
+
+
+<p>To transpose the chord name but not the diagram under it, replace
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.notrans"><tt>\notrans</tt></a><tt>{#1}</tt> with simply <tt>#1</tt> in the above.
+To restore the default behavior, write</p>
+
+<blockquote><pre><tt>\renewcommand{\gtabtrans}[2]{</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.transposehere"><tt>\transposehere</tt></a><tt>{#1}}</tt>
+</pre></blockquote>
+
+<h2><a name="sec8">8 Between Songs</a></h2>
+
+<p>Never put any material directly into the top level of a <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.songs"><tt>songs</tt></a>
+environment.
+Doing so will disrupt the page-builder, usually producing strange page
+breaks and blank pages.
+To safely put material between songs, use one of the environments
+described in this section.</p>
+
+<h3><a name="sec8.1">8.1 Intersong Displays</a></h3>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="env.intersong"><tt class="lmar">intersong</tt></a><br>
+</td><td valign="top">
+<p>To put column-width material between the songs in a <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.songs"><tt>songs</tt></a> environment,
+use an <tt>intersong</tt> environment:</p>
+
+<blockquote><pre><tt>\begin{intersong}</tt>
+&#8942;
+<tt>\end{intersong}</tt>
+</pre></blockquote>
+
+
+<p>Material contributed in an <tt>intersong</tt> environment is subject to the same
+column-breaking rules as songs (see <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.5">section 11.5</a>), but all other
+formatting is up to you.
+By default, LaTeX inserts interline glue below the last line of an
+<tt>intersong</tt> environment.
+To suppress this, end the <tt>intersong</tt> content with <tt>\par\nointerlineskip</tt>.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="env.intersongS"><tt class="lmar">intersong*</tt></a><br>
+</td><td valign="top">
+<p>To instead put page-width material above a song, use an <tt>intersong*</tt>
+environment:</p>
+
+<blockquote><pre><tt>\begin{intersong*}</tt>
+&#8942;
+<tt>\end{intersong*}</tt>
+</pre></blockquote>
+
+
+<p>This starts a new page if the current page already has column-width
+material in it.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="env.songgroup"><tt class="lmar">songgroup</tt></a><br>
+</td><td valign="top">
+<p>By default, all intersong displays are omitted when generating a partial
+book with <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.includeonlysongs"><tt>\includeonlysongs</tt></a>.
+You can force them to be included whenever a particular song is included
+by using a <tt>songgroup</tt> environment:</p>
+
+<blockquote><pre><tt>\begin{songgroup}</tt>
+&#8942;
+<tt>\end{songgroup}</tt>
+</pre></blockquote>
+
+
+<p>Each <tt>songgroup</tt> environment may include any number of <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.intersong"><tt>intersong</tt></a>,
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#env.intersong*"><tt>intersong*</tt></a>, or scripture quotations (see <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec8.2">section 8.2</a>),
+but must include exactly one song.
+When using <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.includeonlysongs"><tt>\includeonlysongs</tt></a>, the entire group is included in the
+book if the enclosed song is included; otherwise the entire group is
+omitted.</p>
+
+<h3><a name="sec8.2">8.2 Scripture Quotations</a></h3>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.beginscripture"><tt class="lmar">\beginscripture</tt></a><br>
+<a name="mac.endscripture"><tt class="lmar">\endscripture</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec8.2.0.1">Starting a Scripture Quotation.</a></b> &nbsp;A special form of intersong block typesets a scripture quotation.
+Scripture quotations begin and end with</p>
+
+<blockquote><pre><tt>\beginscripture{</tt><i class="meta">&lt;ref&gt;</i><tt>}</tt>
+&#8942;
+<tt>\endscripture</tt>
+</pre></blockquote>
+
+
+<p>where <i class="meta">&lt;ref&gt;</i> is a scripture reference that is
+typeset at the end of the quotation.
+The <i class="meta">&lt;ref&gt;</i> argument should conform to the same syntax
+rules as for the <i class="meta">&lt;ref&gt;</i> arguments passed to <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a>
+macros (see <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5">section 5</a>).</p>
+
+<p>The text of the scripture quotation between the <tt>\beginscripture</tt> and
+<tt>\endscripture</tt> lines are parsed in normal paragraph mode.
+For example:</p>
+
+<blockquote><p style="line-height: 1"><tt>\beginscripture{James 5:13}<br>
+  Is any one of you in trouble? He should pray. Is anyone happy? Let him sing songs of praise.<br>
+\endscripture<br>
+</tt></p></blockquote>
+
+<p>produces</p>
+
+<p class="center"><img src="./Songs Package Documentation_files/sample2.gif" alt="document fragment"></p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.Acolon"><tt class="lmar">\Acolon</tt></a><br>
+<a name="mac.Bcolon"><tt class="lmar">\Bcolon</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec8.2.0.2">Tuplets.</a></b> &nbsp;To typeset biblical poetry the way it appears in most bibles, begin each
+line with either <tt>\Acolon</tt> or <tt>\Bcolon</tt>.
+A-colons are typeset flush with the left margin, while B-colons are
+indented.
+Any lines too long to fit are wrapped with double-width hanging indentation.
+For example,</p>
+
+<blockquote><p style="line-height: 1"><tt>\beginscripture{Psalm 1:1}<br>
+  \Acolon Blessed is the man<br>
+  \Bcolon who does not walk in the counsel of the wicked<br>
+  \Acolon or stand in the way of sinners<br>
+  \Bcolon or sit in the seat of mockers.<br>
+\endscripture<br>
+</tt></p></blockquote>
+
+<p>produces</p>
+
+<p class="center"><img src="./Songs Package Documentation_files/sample3.gif" alt="document fragment"></p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.strophe"><tt class="lmar">\strophe</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec8.2.0.3">Stanzas.</a></b> &nbsp;Biblical poetry is often grouped into stanzas or "strophes",
+each of which is separated from the next by a small vertical
+space.
+You can create that vertical space by typing <tt>\strophe</tt>.
+For example,</p>
+
+<blockquote><p style="line-height: 1"><tt>\beginscripture{Psalm 88:2-3}<br>
+  \Acolon May my prayer come before you;<br>
+  \Bcolon turn your ear to my cry.<br>
+  \strophe<br>
+  \Acolon For my soul is full of trouble<br>
+  \Bcolon and my life draws near the grave.<br>
+\endscripture<br>
+</tt></p></blockquote>
+
+<p>produces</p>
+
+<p class="center"><img src="./Songs Package Documentation_files/sample4.gif" alt="document fragment"></p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.scripindent"><tt class="lmar">\scripindent</tt></a><br>
+<a name="mac.scripoutdent"><tt class="lmar">\scripoutdent</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec8.2.0.4">Indented Blocks.</a></b> &nbsp;Some bible passages, such as those that mix prose and poetry, contain
+indented blocks of text.
+You can increase the indentation level within a scripture quotation
+by using <tt>\scripindent</tt> and decrease it by using <tt>\scripoutdent</tt>.
+For example,</p>
+
+<blockquote><p style="line-height: 1"><tt>\beginscripture{Hebrews 10:17-18}<br>
+  Then he adds:<br>
+  \scripindent<br>
+  \Acolon ‘‘Their sins and lawless acts<br>
+  \Bcolon I will remember no more.’’<br>
+  \scripoutdent<br>
+  And where these have been forgiven, there is no longer any sacrifice for sin.<br>
+\endscripture<br>
+</tt></p></blockquote>
+
+<p>produces</p>
+
+<p class="center"><img src="./Songs Package Documentation_files/sample5.gif" alt="document fragment"></p>
+
+<h2><a name="sec9">9 Chapters and Sections</a></h2>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.songsection"><tt class="lmar">\songsection</tt></a><br>
+<a name="mac.songchapter"><tt class="lmar">\songchapter</tt></a><br>
+</td><td valign="top">
+<p>Song books can be divided into chapters and sections using all the usual
+macros provided by LaTeX (e.g., <tt>\chapter</tt>, <tt>\section</tt>, etc.) and by
+other macro packages.
+In addition, the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package provides two helpful built-in sectioning
+macros:</p>
+
+<blockquote><pre><tt>\songchapter{</tt><i class="meta">&lt;title&gt;</i><tt>}</tt>
+<tt>\songsection{</tt><i class="meta">&lt;title&gt;</i><tt>}</tt>
+</pre></blockquote>
+
+
+<p>which act like LaTeX's <tt>\chapter</tt> and <tt>\section</tt> commands except that they
+center the <i class="meta">&lt;title&gt;</i> text in sans serif font and omit the chapter/section
+number.
+The <tt>\songchapter</tt> macro only works in document classes that support
+<tt>\chapter</tt> (e.g., the <tt>book</tt> class).</p>
+
+<h2><a name="sec10">10 Indexes</a></h2>
+
+<h3><a name="sec10.1">10.1 Index Creation</a></h3>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.newindex"><tt class="lmar">\newindex</tt></a><br>
+<a name="mac.newauthorindex"><tt class="lmar">\newauthorindex</tt></a><br>
+<a name="mac.newscripindex"><tt class="lmar">\newscripindex</tt></a><br>
+</td><td valign="top">
+<p>The <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package supports three kinds of indexes: indexes by title and/or
+notable lyrics, indexes by author, and indexes by scripture reference.
+To generate an index, first declare the index in the document preamble
+(i.e., before the <tt>\begin{document}</tt> line) with one of the following:</p>
+
+<blockquote><pre><tt>\newindex{</tt><i class="meta">&lt;id&gt;</i><tt>}{</tt><i class="meta">&lt;filename&gt;</i><tt>}</tt>
+<tt>\newauthorindex{</tt><i class="meta">&lt;id&gt;</i><tt>}{</tt><i class="meta">&lt;filename&gt;</i><tt>}</tt>
+<tt>\newscripindex{</tt><i class="meta">&lt;id&gt;</i><tt>}{</tt><i class="meta">&lt;filename&gt;</i><tt>}</tt>
+</pre></blockquote>
+
+
+<p>The <i class="meta">&lt;id&gt;</i> should be an alphabetic identifier that will be used to
+identify the index in other macros that reference it.
+The <i class="meta">&lt;filename&gt;</i> should be a string that, when appended with an
+extension, constitutes a valid filename on the system.
+Auxiliary files named <i class="meta">&lt;filename&gt;</i><tt>.sxd</tt> and <i class="meta">&lt;filename&gt;</i><tt>.sbx</tt>
+are generated during the automatic index generation process.
+For example:</p>
+
+<blockquote><pre><tt>\newindex{mainindex}{idxfile}</tt>
+</pre></blockquote>
+
+
+<p>creates a title index named "<tt>mainindex</tt>" whose data is
+stored in files named <tt>idxfile.sxd</tt> and <tt>idxfile.sbx</tt>.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.showindex"><tt class="lmar">\showindex</tt></a><br>
+</td><td valign="top">
+<p>To display the index in the document, use:</p>
+
+<blockquote><pre><tt>\showindex[</tt><i class="meta">&lt;columns&gt;</i><tt>]{</tt><i class="meta">&lt;title&gt;</i><tt>}{</tt><i class="meta">&lt;id&gt;</i><tt>}</tt>
+</pre></blockquote>
+
+
+<p>where <i class="meta">&lt;id&gt;</i> is the same identifier used in the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.newindex"><tt>\newindex</tt></a>,
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.newauthorindex"><tt>\newauthorindex</tt></a>, or <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.newscripindex"><tt>\newscripindex</tt></a> command, and where
+the <i class="meta">&lt;title&gt;</i> is the title of the index, which should consist only of
+simple text (no font or formatting macros, since those cannot be used in
+pdf bookmark indexes).
+The <tt>[</tt><i class="meta">&lt;columns&gt;</i><tt>]</tt> part is optional; if specified it dictates the
+number of columns if the index can't fit in a single column.
+For example, for a 2-column title index, write:</p>
+
+<blockquote><pre><tt>\showindex[2]{Index of Song Titles}{mainindex}</tt>
+</pre></blockquote>
+
+<h3><a name="sec10.2">10.2 Index Entries</a></h3>
+
+<p>Every song automatically gets entries in the current <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.songs"><tt>songs</tt></a>
+environment's list of title index(es) (see <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec5">section 5</a>).
+However, you can also add extra index entries for a song to any index.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="env.indexE"><tt class="lmar">index=</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec10.2.0.1">Indexing Lyrics.</a></b> &nbsp;For example, title indexes often have entries for memorable lines
+of lyrics in a song in addition to the song's title.
+You can add an index entry for the current song to the section's
+title index(es) by adding <tt>index={</tt><i class="meta">&lt;lyrics&gt;</i><tt>}</tt> to the song's
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> line.
+For example,</p>
+
+<blockquote><pre><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a><tt>{Doxology}</tt>
+<tt>          [index={Praise God from Whom all blessings flow}]</tt>
+</pre></blockquote>
+
+
+<p>causes the song to be indexed both as "<i>Doxology</i>" and as
+"Praise God from Whom all blessings flow" in the section's title index(es).
+You can use <tt>index=</tt> multiple times in a <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> line to produce
+multiple additional index entries.
+Index entries produced with <tt>index={</tt><i class="meta">&lt;lyrics&gt;</i><tt>}</tt> are
+typeset in an upright font instead of in italics to distinguish
+them from song titles.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="env.ititleE"><tt class="lmar">ititle=</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec10.2.0.2">Indexing Extra Song Titles.</a></b> &nbsp;To add a regular index entry typeset in italics to the title
+index(es), use:</p>
+
+<blockquote><pre><tt>ititle={</tt><i class="meta">&lt;title&gt;</i><tt>}</tt>
+</pre></blockquote>
+
+
+<p>in the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> line instead.
+Like <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.indexE"><tt>index=</tt></a> keyvals, <tt>ititle=</tt> can be used multiple times to produce
+multiple additional index entries.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.indexentry"><tt class="lmar">\indexentry</tt></a><br>
+<a name="mac.indextitleentry"><tt class="lmar">\indextitleentry</tt></a><br>
+</td><td valign="top">
+<p>You can also create index entries by saying
+<tt>\indexentry[</tt><i class="meta">&lt;indexes&gt;</i><tt>]{</tt><i class="meta">&lt;lyrics&gt;</i><tt>}</tt> (which creates an
+entry like <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.indexE"><tt>index=</tt></a>) or
+<tt>\indextitleentry[</tt><i class="meta">&lt;indexes&gt;</i><tt>]{</tt><i class="meta">&lt;title&gt;</i><tt>}</tt> (which
+creates an entry like <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.ititleE"><tt>ititle=</tt></a>).
+These two macros can be used anywhere between the song's <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a>
+and <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.endsong"><tt>\endsong</tt></a> lines, and can be used multiple times to produce
+multiple entries.
+If specified, <i class="meta">&lt;indexes&gt;</i> is a comma-separated list of the identifiers
+of indexes to which the entry should be added.
+Otherwise the new entry is added to all of the title indexes for the current
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#env.songs"><tt>songs</tt></a> environment.</p>
+
+<h3><a name="sec10.3">10.3 Compiling</a></h3>
+
+<p>As with a typical LaTeX document, compiling a song book document with
+indexes requires three steps.
+First, use LaTeX (<tt>pdflatex</tt> is recommended) to generate auxiliary files
+from the <tt>.tex</tt> file:</p>
+
+<blockquote><pre><tt>pdflatex mybook.tex</tt>
+</pre></blockquote>
+
+<p>Second, use the <tt>songidx.lua</tt> script to generate an index for each index that
+you declared with <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.newindex"><tt>\newindex</tt></a>, <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.newauthorindex"><tt>\newauthorindex</tt></a>, or
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.newscripindex"><tt>\newscripindex</tt></a>.
+The script can be launched using LuaTeX, using the following syntax:</p>
+
+<blockquote><pre><tt>texlua songidx.lua </tt>[<tt>-b</tt> <i class="meta">&lt;canon&gt;</i><tt>.can</tt>] <i class="meta">&lt;filename&gt;</i><tt>.sxd</tt> <i class="meta">&lt;filename&gt;</i><tt>.sbx</tt>
+</pre></blockquote>
+
+
+<p>where <i class="meta">&lt;filename&gt;</i> is the same <i class="meta">&lt;filename&gt;</i> that was used in the
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.newindex"><tt>\newindex</tt></a>, <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.newauthorindex"><tt>\newauthorindex</tt></a>, or <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.newscripindex"><tt>\newscripindex</tt></a> macro.
+If the index was declared with <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.newscripindex"><tt>\newscripindex</tt></a>, then the <tt>-b</tt> option
+is used to specify which version of the bible you wish to use as a basis
+for sorting your scripture index.
+The <i class="meta">&lt;canon&gt;</i> part can be any of the <tt>.can</tt> files provided with
+the <tt>songidx</tt> distribution.
+If you are using a Protestant, Catholic, or Greek Orthodox Christian bible
+with book names in English, then the <tt>bible.can</tt> canon file should work
+well.
+For other bibles, you should create your own <tt>.can</tt> file by copying and
+modifying one of the existing <tt>.can</tt> files.</p>
+
+<p>For example, if your song book <tt>.tex</tt> file contains the lines</p>
+
+<blockquote><pre><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.newindex"><tt>\newindex</tt></a><tt>{titleidx}{titlfile}</tt>
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.newauthorindex"><tt>\newauthorindex</tt></a><tt>{authidx}{authfile}</tt>
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.newscripindex"><tt>\newscripindex</tt></a><tt>{scripidx}{scrpfile}</tt>
+</pre></blockquote>
+
+
+<p>then to generate indexes sorted according to a Christian English bible,
+execute:</p>
+
+<blockquote><pre><tt>texlua songidx.lua titlfile.sxd titlfile.sbx</tt>
+<tt>texlua songidx.lua authfile.sxd authfile.sbx</tt>
+<tt>texlua songidx.lua -b bible.can scrpfile.sxd scrpfile.sbx</tt>
+</pre></blockquote>
+
+<p>Once the indexes are generated, generate the final book by invoking
+LaTeX one more time:</p>
+
+<blockquote><pre><tt>pdflatex mybook.tex</tt>
+</pre></blockquote>
+
+<h2><a name="sec11">11 Customizing the Book</a></h2>
+
+<h3><a name="sec11.1">11.1 Song and Verse Numbering</a></h3>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="env.songnum"><tt class="lmar">songnum</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec11.1.0.1">Song Numbering.</a></b> &nbsp;The <tt>songnum</tt> counter defines the next song's number.
+It is set to 1 at the beginning of a <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.songs"><tt>songs</tt></a> environment and is
+increased by 1 after each <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.endsong"><tt>\endsong</tt></a>.
+It can be redefined anywhere except within a song.
+For example,</p>
+
+<blockquote><pre><tt>\setcounter{songnum}{3}</tt>
+</pre></blockquote>
+
+<p>sets the next song's number to be 3.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.thesongnum"><tt class="lmar">\thesongnum</tt></a><br>
+</td><td valign="top">
+<p>You can change the song numbering style for a song section by redefining
+<tt>\thesongnum</tt>.
+For example, to cause songs to be numbered A1, A2, etc., in the current
+song section, type</p>
+
+<blockquote><pre><tt>\renewcommand{\thesongnum}{A\arabic{songnum}}</tt>
+</pre></blockquote>
+
+
+<p>The expansion of <tt>\thesongnum</tt> must always produce plain text with no
+font formatting or unexpandable macro tokens, since its text is
+exported to auxiliary index generation files where it is sorted.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.printsongnum"><tt class="lmar">\printsongnum</tt></a><br>
+</td><td valign="top">
+<p>To change the formatting of song numbers as they appear at the beginning
+of each song, redefine the <tt>\printsongnum</tt> macro,
+which expects the text yielded by <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.thesongnum"><tt>\thesongnum</tt></a> as its only argument.
+For example, to typeset song numbers in italics atop each song, define</p>
+
+<blockquote><pre><tt>\renewcommand{\printsongnum}[1]{\it\LARGE#1}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.songnumwidth"><tt class="lmar">\songnumwidth</tt></a><br>
+</td><td valign="top">
+<p>The <tt>\songnumwidth</tt> length defines the width of the shaded boxes that contain
+song numbers at the beginning of each song.
+For example, to make each such box 2 centimeters wide, you could define</p>
+
+<blockquote><pre><tt>\setlength{\songnumwidth}{2cm}</tt>
+</pre></blockquote>
+
+
+<p>If <tt>\songnumwidth</tt> is set to zero, song numbers are not shown at all.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.nosongnumbers"><tt class="lmar">\nosongnumbers</tt></a><br>
+</td><td valign="top">
+<p>To turn off song numbering entirely, type <tt>\nosongnumbers</tt>.
+This inhibits the display of the song number atop each song
+(but song numbers are still be displayed elsewhere, such as in indexes).
+The same effect can be achieved by setting <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songnumwidth"><tt>\songnumwidth</tt></a> to zero.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="env.versenum"><tt class="lmar">versenum</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec11.1.0.2">Verse Numbering.</a></b> &nbsp;The <tt>versenum</tt> counter defines the next verse's number.
+It is set to 1 after each <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> line and is increased by 1 after
+each <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.endverse"><tt>\endverse</tt></a> (except if the verse begins with <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginverse"><tt>\beginverse</tt></a><tt>*</tt>).
+The <tt>versenum</tt> counter can be redefined anywhere within a song.
+For example,</p>
+
+<blockquote><pre><tt>\setcounter{versenum}{3}</tt>
+</pre></blockquote>
+
+<p>sets the next verse's number to be 3.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.theversenum"><tt class="lmar">\theversenum</tt></a><br>
+</td><td valign="top">
+<p>You can change the verse numbering style by redefining <tt>\theversenum</tt>.
+For example, to cause verses to be numbered in uppercase roman numerals,
+define</p>
+
+<blockquote><pre><tt>\renewcommand{\theversenum}{\Roman{versenum}}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.printversenum"><tt class="lmar">\printversenum</tt></a><br>
+</td><td valign="top">
+<p>To change the formatting of verse numbers as they appear at the beginning
+of each verse, redefine the <tt>\printversenum</tt> macro,
+which expects the text yielded by <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.theversenum"><tt>\theversenum</tt></a> as its only argument.
+For example, to typeset verse numbers in italics, define</p>
+
+<blockquote><pre><tt>\renewcommand{\printversenum}[1]{\it\LARGE#1.\ }</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.versenumwidth"><tt class="lmar">\versenumwidth</tt></a><br>
+</td><td valign="top">
+<p>The <tt>\versenumwidth</tt> length defines the horizontal space reserved for verse
+numbers to the left of each verse text.
+Verse text is shifted right by this amount.
+For example, to reserve half a centimeter of space for verse numbers, define</p>
+
+<blockquote><pre><tt>\setlength{\versenumwidth}{0.5cm}</tt>
+</pre></blockquote>
+
+<p>Verse numbers whose widths exceed <tt>\versenumwidth</tt> indent the first
+line of the verse an additional amount to make room, but subsequent lines
+of the verse are only indented by <tt>\versenumwidth</tt>.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.noversenumbers"><tt class="lmar">\noversenumbers</tt></a><br>
+</td><td valign="top">
+<p>To turn off verse numbering entirely, use <tt>\noversenumbers</tt>.
+This is equivalent to saying</p>
+
+<blockquote><pre><tt>\renewcommand{</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.printversenum"><tt>\printversenum</tt></a><tt>}[1]{}</tt>
+<tt>\setlength{\versenumwidth}{0pt}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.placeversenum"><tt class="lmar">\placeversenum</tt></a><br>
+</td><td valign="top">
+<p>The horizontal placement of verse numbers within the first line of each
+verse is controlled by the <tt>\placeversenum</tt> macro.
+By default, each verse number is placed flush-left.
+For more information, consult the implementation section of the <a href="http://songs.sourceforge.net/songs.pdf">pdf documentation</a>.</p>
+
+<h3><a name="sec11.2">11.2 Song Appearance</a></h3>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.lyricfont"><tt class="lmar">\lyricfont</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec11.2.0.1">Font Selection.</a></b> &nbsp;By default, lyrics are typeset using the document-default font
+(<tt>\normalfont</tt>) and with the document-default point size (<tt>\normalsize</tt>).
+You can change these defaults by redefining <tt>\lyricfont</tt>.
+For example, to cause lyrics to be typeset in small sans serif font,
+you could define</p>
+
+<blockquote><pre><tt>\renewcommand{\lyricfont}{\sffamily\small}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.stitlefont"><tt class="lmar">\stitlefont</tt></a><br>
+</td><td valign="top">
+<p>Song titles are typeset in a sans-serif, slanted font by default
+(sans-serif, upright if producing slides), with minimal line spacing.
+You can change this default by redefining <tt>\stitlefont</tt>.
+For example, to cause titles to be typeset in a roman font with lines
+spaced 20 points apart, you could define</p>
+
+<blockquote><pre><tt>\renewcommand{\stitlefont}{</tt>
+<tt>  \rmfont\Large\baselineskip=20pt\lineskiplimit=0pt</tt>
+<tt>}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.versefont"><tt class="lmar">\versefont</tt></a><br>
+<a name="mac.chorusfont"><tt class="lmar">\chorusfont</tt></a><br>
+<a name="mac.meterfont"><tt class="lmar">\meterfont</tt></a><br>
+<a name="mac.echofont"><tt class="lmar">\echofont</tt></a><br>
+<a name="mac.notefont"><tt class="lmar">\notefont</tt></a><br>
+</td><td valign="top">
+<p>You can apply additional font changes to verses, choruses, meter numbers,
+echo parts produced with <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.echo"><tt>\echo</tt></a>, and textual notes produced with
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.textnote"><tt>\textnote</tt></a> and <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.musicnote"><tt>\musicnote</tt></a>, by redefining <tt>\versefont</tt>,
+<tt>\chorusfont</tt>, <tt>\meterfont</tt>, <tt>\echofont</tt>, and <tt>\notefont</tt>, respectively.
+For example, to typeset choruses in italics, you could define</p>
+
+<blockquote><pre><tt>\renewcommand{\chorusfont}{\it}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.notebgcolor"><tt class="lmar">\notebgcolor</tt></a><br>
+<a name="mac.snumbgcolor"><tt class="lmar">\snumbgcolor</tt></a><br>
+</td><td valign="top">
+<p>The colors of shaded boxes containing textual notes and song numbers
+can be changed by redefining the <tt>\notebgcolor</tt> and <tt>\snumbgcolor</tt>
+macros.
+For example:</p>
+
+<blockquote><pre><tt>\renewcommand{\notebgcolor}{red}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.printchord"><tt class="lmar">\printchord</tt></a><br>
+</td><td valign="top">
+<p>By default, chords are typeset in sans serif oblique (slanted) font.
+You can customize chord appearance by redefining <tt>\printchord</tt>, which
+accepts the chord text as its argument.
+For example, to cause chords to be printed in roman boldface font,
+you could define</p>
+
+<blockquote><pre><tt>\renewcommand{\printchord}[1]{\rmfamily\bf#1}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.sharpsymbol"><tt class="lmar">\sharpsymbol</tt></a><br>
+<a name="mac.flatsymbol"><tt class="lmar">\flatsymbol</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec11.2.0.2">Accidental Symbols.</a></b> &nbsp;By default, sharp and flat symbols are typeset using LaTeX's
+<tt>\#</tt> (#) and <tt>\flat</tt> (&#9837;) macros.
+Users can change this by redefining <tt>\sharpsymbol</tt> and <tt>\flatsymbol</tt>.
+For example, to use <tt>\sharp</tt> (&#9839;) instead of #, one could
+redefine <tt>\sharpsymbol</tt> as follows.</p>
+
+<blockquote><pre><tt>\renewcommand{\sharpsymbol}{\ensuremath{^\sharp}}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.everyverse"><tt class="lmar">\everyverse</tt></a><br>
+<a name="mac.everychorus"><tt class="lmar">\everychorus</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec11.2.0.3">Verse and Chorus Titles.</a></b> &nbsp;The <tt>\everyverse</tt> macro is executed at the beginning of each verse, and
+<tt>\everychorus</tt> is executed at the beginning of each chorus.
+Thus, to begin each chorus with the word "Chorus:" one could type,</p>
+
+<blockquote><pre><tt>\renewcommand{\everychorus}{</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.textnote"><tt>\textnote</tt></a><tt>{Chorus:}}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.versesep"><tt class="lmar">\versesep</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec11.2.0.4">Spacing Options.</a></b> &nbsp;The vertical distance between song verses and song choruses is defined by
+the skip register <tt>\versesep</tt>.
+For example, to put 12 points of space between each pair of verses and
+choruses, with a flexibility of plus or minus 2 points, you could define</p>
+
+<blockquote><pre><tt>\versesep=12pt plus 2pt minus 2pt</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.afterpreludeskip"><tt class="lmar">\afterpreludeskip</tt></a><br>
+<a name="mac.beforepostludeskip"><tt class="lmar">\beforepostludeskip</tt></a><br>
+</td><td valign="top">
+<p>The vertical distance between the song's body and its prelude and postlude
+material is controlled by skips <tt>\afterpreludeskip</tt> and
+<tt>\beforepostludeskip</tt>.
+This glue can be made stretchable for centering effects.
+For example, to cause each song body to be centered on the page with one
+song per page, you could write:</p>
+
+<blockquote><pre><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songcolumns"><tt>\songcolumns</tt></a><tt>{1}</tt>
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.spenalty"><tt>\spenalty</tt></a><tt>=-10000</tt>
+<tt>\afterpreludeskip=2pt plus 1fil</tt>
+<tt>\beforepostludeskip=2pt plus 1fil</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.baselineadj"><tt class="lmar">\baselineadj</tt></a><br>
+</td><td valign="top">
+<p>The vertical distance between the baselines of consecutive lines of
+lyrics is computed by the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package based on several factors
+including the lyric font size, the chord font size (if in <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.chorded"><tt>chorded</tt></a>
+mode), and whether <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.slides"><tt>slides</tt></a> mode is currently active.
+You can adjust the results of this computation by redefining skip
+register <tt>\baselineadj</tt>.
+For example, to reduce the natural distance between baselines by 1 point
+but allow an additional 1 point of stretching when attempting to balance
+columns, you could define</p>
+
+<blockquote><pre><tt>\baselineadj=-1pt plus 1pt minus 0pt</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.clineparams"><tt class="lmar">\clineparams</tt></a><br>
+</td><td valign="top">
+<p>To change the vertical distance between chords and the lyrics below them,
+redefine the <tt>\clineparams</tt> macro with a definition that adjusts the
+LaTeX parameters <tt>\baselineskip</tt>, <tt>\lineskiplimit</tt>, and <tt>\lineskip</tt>.
+For example, to cause the baselines of chords and their lyrics to be
+12 points apart with at least 1 point of space between the bottom of the
+chord and the top of the lyric, you could write:</p>
+
+<blockquote><pre><tt>\renewcommand{\clineparams}{</tt>
+<tt>  \baselineskip=12pt</tt>
+<tt>  \lineskiplimit=1pt</tt>
+<tt>  \lineskip=1pt</tt>
+<tt>}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.cbarwidth"><tt class="lmar">\cbarwidth</tt></a><br>
+</td><td valign="top">
+<p>The width of the vertical line that appears to the left of choruses is
+controlled by the <tt>\cbarwidth</tt> length.
+To eliminate the line entirely (and the spacing around it), you can set
+<tt>\cbarwidth</tt> to <tt>0pt</tt>:</p>
+
+<blockquote><pre><tt>\setlength{\cbarwidth}{0pt}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.sbarheight"><tt class="lmar">\sbarheight</tt></a><br>
+</td><td valign="top">
+<p>The height of the horizontal line that appears between each pair of songs
+is controlled by the <tt>\sbarheight</tt> length.
+To eliminate the line entirely (and the spacing around it), you can set
+<tt>\sbarheight</tt> to <tt>0pt</tt>:</p>
+
+<blockquote><pre><tt>\setlength{\sbarheight}{0pt}</tt>
+</pre></blockquote>
+
+<p><b><a name="sec11.2.0.5">Song Top and Bottom Material.</a></b> &nbsp;You can adjust the header and footer material that precedes and concludes
+each song by redefining <tt>\extendprelude</tt> and <tt>\extendpostlude</tt>.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.extendprelude"><tt class="lmar">\extendprelude</tt></a><br>
+<a name="mac.showauthors"><tt class="lmar">\showauthors</tt></a><br>
+<a name="mac.showrefs"><tt class="lmar">\showrefs</tt></a><br>
+</td><td valign="top">
+<p>By default, <tt>\extendprelude</tt> displays the song's authors and scripture
+references using the macros <tt>\showauthors</tt> and <tt>\showrefs</tt>.
+The following definition changes it to also print copyright info:</p>
+
+<blockquote><pre><tt>\renewcommand{\extendprelude}{</tt>
+  <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.showrefs"><tt>\showrefs</tt></a><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.showauthors"><tt>\showauthors</tt></a>
+<tt>  {\bfseries</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songcopyright"><tt>\songcopyright</tt></a><tt>\par}</tt>
+<tt>}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.extendpostlude"><tt class="lmar">\extendpostlude</tt></a><br>
+</td><td valign="top">
+<p>By default, <tt>\extendpostlude</tt> prints the song's copyright and licensing
+information as a single paragraph using <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songcopyright"><tt>\songcopyright</tt></a> and
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songlicense"><tt>\songlicense</tt></a>.
+The following definition changes it to also print the words
+"Used with permission" at the end of every song's footer information:</p>
+
+<blockquote><pre><tt>\renewcommand{\extendpostlude}{</tt>
+  <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songcopyright"><tt>\songcopyright</tt></a><tt>\ </tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songlicense"><tt>\songlicense</tt></a><tt>\unskip</tt>
+<tt>  \ Used with permission.</tt>
+<tt>}</tt>
+</pre></blockquote>
+
+<p>In general, any macro documented in <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec12">section 12</a> can be used
+in <tt>\extendprelude</tt> and <tt>\extendpostlude</tt> to print song information, such
+as <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songauthors"><tt>\songauthors</tt></a>, <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songrefs"><tt>\songrefs</tt></a>, <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songcopyright"><tt>\songcopyright</tt></a>, and
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songlicense"><tt>\songlicense</tt></a>.
+For convenience, the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.showauthors"><tt>\showauthors</tt></a> and <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.showrefs"><tt>\showrefs</tt></a> macros display
+author and scripture reference information as a pre-formatted paragraph
+the way it appears in the default song header blocks.</p>
+
+<p>See <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.8">section 11.8</a> for how to define new <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> keyvals and
+use them in <tt>\extendprelude</tt>.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.makeprelude"><tt class="lmar">\makeprelude</tt></a><br>
+<a name="mac.makepostlude"><tt class="lmar">\makepostlude</tt></a><br>
+</td><td valign="top">
+<p>For complete control over the appearance of the header and footer material
+that precedes and concludes each song, you can redefine the macros
+<tt>\makeprelude</tt> and <tt>\makepostlude</tt>.
+When typesetting a song, the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package code invokes both of these
+macros once (after processing all the material between the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a>
+and <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.endsong"><tt>\endsong</tt></a> lines), placing the results within vboxes.
+The resulting vboxes are placed atop and below the song content.
+By default, <tt>\makeprelude</tt> displays the song's titles, authors, and scripture
+references to the right of a shaded box containing the song's number; and
+<tt>\makepostlude</tt> displays the song's copyright and licensing information in
+fine print.</p>
+
+<p>As a simple example, the following causes each song to start with its
+number and title(s), centered, in a large, boldface font, and then centers
+the rest of the prelude material (e.g., references and authors) below that
+(using <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.extendprelude"><tt>\extendprelude</tt></a>).</p>
+
+<blockquote><pre><tt>\renewcommand\makeprelude{%</tt>
+  <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.resettitles"><tt>\resettitles</tt></a>
+<tt>  \centering</tt>
+<tt>  {\Large\bfseries</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.thesongnum"><tt>\thesongnum</tt></a><tt>. </tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songtitle"><tt>\songtitle</tt></a><tt>\par</tt>
+   <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.nexttitle"><tt>\nexttitle</tt></a><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.foreachtitle"><tt>\foreachtitle</tt></a><tt>{(</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songtitle"><tt>\songtitle</tt></a><tt>)\par}}%</tt>
+  <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.extendprelude"><tt>\extendprelude</tt></a>
+<tt>}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.vvpenalty"><tt class="lmar">\vvpenalty</tt></a><br>
+<a name="mac.ccpenalty"><tt class="lmar">\ccpenalty</tt></a><br>
+<a name="mac.vcpenalty"><tt class="lmar">\vcpenalty</tt></a><br>
+<a name="mac.cvpenalty"><tt class="lmar">\cvpenalty</tt></a><br>
+<a name="mac.brkpenalty"><tt class="lmar">\brkpenalty</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec11.2.0.6">Page- and Column-breaking.</a></b> &nbsp;Page-breaking and column-breaking within songs that are too large to fit
+in a single column/page is influenced by the values of several penalties.
+Penalties of value <tt>\interlinepenalty</tt> are inserted between consecutive
+lines of each verse and chorus;
+penalties of value <tt>\vvpenalty</tt>, <tt>\ccpenalty</tt>, <tt>\vcpenalty</tt>, and <tt>\cvpenalty</tt>
+are inserted into each song between consecutive verses, between consecutive
+choruses, after a verse followed by a chorus, and after a chorus followed by
+a verse, respectively;
+and penalties of value <tt>\brkpenalty</tt> are inserted wherever <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.brk"><tt>\brk</tt></a> is
+used on a line by itself.
+The higher the penalty, the less likely TeX is to place a
+page- or column-break at that site.
+If any are set to <span class="nowrap">-10000</span> or lower, breaks are forced there.
+By default, <tt>\interlinepenalty</tt> is set to 1000 and the rest are set to 200
+so that breaks between verses and choruses are preferred over breaks within
+choruses and verses, but are not forced.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.sepverses"><tt class="lmar">\sepverses</tt></a><br>
+</td><td valign="top">
+<p>Saying <tt>\sepverses</tt> sets all of the above penalties to <span class="nowrap">-10000</span> except for
+<tt>\ccpenalty</tt> which is set to 100.
+This is useful in <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.slides"><tt>slides</tt></a> mode because it forces each verse and
+chorus to be typeset on a separate slide, except for consecutive choruses,
+which remain together when possible.
+(This default reflects an expectation that consecutive choruses typically
+consist of a pre-chorus and chorus that are always sung together.)</p>
+
+<p>These defaults can be changed by changing the relevant penalty register
+directly.
+For example, to force a page- or column-break between consecutive choruses,
+type</p>
+
+<blockquote><pre><tt>\ccpenalty=-10000</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.versejustify"><tt class="lmar">\versejustify</tt></a><br>
+<a name="mac.chorusjustify"><tt class="lmar">\chorusjustify</tt></a><br>
+<a name="mac.justifyleft"><tt class="lmar">\justifyleft</tt></a><br>
+<a name="mac.justifycenter"><tt class="lmar">\justifycenter</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec11.2.0.7">Text Justification.</a></b> &nbsp;To left-justify or center the lines of verses or choruses, redefine
+<tt>\versejustify</tt> or <tt>\chorusjustify</tt> to <tt>\justifyleft</tt> or <tt>\justifycenter</tt>,
+respectively.
+For example, to cause choruses to be centered, one could type:</p>
+
+<blockquote><pre><tt>\renewcommand{</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.chorusjustify"><tt>\chorusjustify</tt></a><tt>}{\justifycenter}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.notejustify"><tt class="lmar">\notejustify</tt></a><br>
+</td><td valign="top">
+<p>Justification of textual notes too long to fit on a single line
+is controlled by the <tt>\notejustify</tt> macro.
+By default, it sets up an environment that fully justifies the note
+(i.e., all but the last line of each paragraph extends all the way from
+the left to the right margin).
+For more information, consult the implementation section of the <a href="http://songs.sourceforge.net/songs.pdf">pdf documentation</a>.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.placenote"><tt class="lmar">\placenote</tt></a><br>
+</td><td valign="top">
+<p>A textual note that is shorter than a single line is placed flush-left by
+default, or is centered when in slides mode.
+This placement of textual notes is controlled by <tt>\placenote</tt>.
+For more information, consult the implementation section of the <a href="http://songs.sourceforge.net/songs.pdf">pdf documentation</a>.</p>
+
+<h3><a name="sec11.3">11.3 Scripture Appearance</a></h3>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.scripturefont"><tt class="lmar">\scripturefont</tt></a><br>
+</td><td valign="top">
+<p>By default, scripture quotations are typeset in Zaph Chancery font
+with the document-default point size (<tt>\normalsize</tt>).
+You can change these defaults by redefining <tt>\scripturefont</tt>.
+For example, to cause scripture quotations to be typeset in sans serif
+italics, define:</p>
+
+<blockquote><pre><tt>\renewcommand{\scripturefont}{\sffamily\it}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.printscrcite"><tt class="lmar">\printscrcite</tt></a><br>
+</td><td valign="top">
+<p>By default, the citation at the end of a scripture quotation is
+typeset in sans serif font at the document-default point size
+(<tt>\normalsize</tt>).
+You can customize the appearance of the citation by redefining
+<tt>\printscrcite</tt>, which accepts the citation text as its argument.
+For example, to cause citations to be printed in roman italics font, define:</p>
+
+<blockquote><pre><tt>\renewcommand{\printscrcite}[1]{\rmfamily\it#1}</tt>
+</pre></blockquote>
+
+<h3><a name="sec11.4">11.4 Conditional Blocks</a></h3>
+
+<p>Conditional macros allow certain material to be included in some books but
+not others.
+For example, a musician's chord book might include extra verses with
+alternate chordings.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<tt class="lmar">\if...</tt><a name="mac.ifchorded"></a><a name="mac.iflyric"></a><a name="mac.ifslides"></a><a name="mac.ifpartiallist"></a><a name="mac.ifsongindexes"></a><a name="mac.ifmeasures"></a><a name="mac.ifrawtext"></a><a name="mac.iftranscapos"></a><a name="mac.ifnolyrics"></a><a name="mac.ifpagepreludes"></a><a name="mac.ifvnumbered"></a><br>
+</td><td valign="top">
+<p>A conditional block begins with a macro named <tt>\if</tt><i class="meta">&lt;type&gt;</i>, where
+<i class="meta">&lt;type&gt;</i> is one of the types listed in the first column of
+the following Table:</p>
+
+<div class="center"><table><tbody><tr><td>
+</td><td><span class="large"><b>Type</b></span></td><td></td><td><span class="large"><b>Processed only if...</b></span></td><td></td></tr>
+<tr><td>
+</td><td><tt>chorded</tt></td><td></td><td>the <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.chorded"><tt>chorded</tt></a> option is active</td><td></td></tr>
+<tr><td></td><td><tt>lyric</tt></td><td></td><td>the <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.chorded"><tt>chorded</tt></a> option is not active</td><td></td></tr>
+<tr><td></td><td><tt>slides</tt></td><td></td><td>the <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.slides"><tt>slides</tt></a> option is active</td><td></td></tr>
+<tr><td></td><td><tt>partiallist</tt></td><td></td><td>the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.includeonlysongs"><tt>\includeonlysongs</tt></a> macro is being used to extract
+  a partial list of songs</td><td></td></tr>
+<tr><td></td><td><tt>songindexes</tt></td><td></td><td>the <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.noindexes"><tt>noindexes</tt></a> option is not active</td><td></td></tr>
+<tr><td></td><td><tt>measures</tt></td><td></td><td>the <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.nomeasures"><tt>nomeasures</tt></a> option is not active</td><td></td></tr>
+<tr><td></td><td><tt>rawtext</tt></td><td></td><td>the <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.rawtext"><tt>rawtext</tt></a> option is active</td><td></td></tr>
+<tr><td></td><td><tt>transcapos</tt></td><td></td><td>the <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.transposecapos"><tt>transposecapos</tt></a> option is active</td><td></td></tr>
+<tr><td></td><td><tt>nolyrics</tt></td><td></td><td>the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.nolyrics"><tt>\nolyrics</tt></a> macro is in effect</td><td></td></tr>
+<tr><td></td><td><tt>pagepreludes</tt></td><td></td><td>the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.pagepreludes"><tt>\pagepreludes</tt></a> macro is in effect</td><td></td></tr>
+<tr><td></td><td><tt>vnumbered</tt></td><td></td><td>the current verse is numbered (i.e., it was started
+  with <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginverse"><tt>\beginverse</tt></a> instead of <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginverse"><tt>\beginverse</tt></a><tt>*</tt>)</td><td></td></tr></tbody></table></div>
+
+
+
+<p>The conditional block concludes with the macro <tt>\fi</tt>.
+Between the <tt>\if</tt><i class="meta">&lt;type&gt;</i> and the <tt>\fi</tt> may also appear an <tt>\else</tt>.
+For example, in the construction</p>
+
+<blockquote><pre><tt>\ifchorded</tt>
+&#8195;&#8195;&#8195;&#8195;<i class="meta">&lt;A&gt;</i>
+<tt>\else</tt>
+&#8195;&#8195;&#8195;&#8195;<i class="meta">&lt;B&gt;</i>
+<tt>\fi</tt>
+</pre></blockquote>
+
+
+<p>material <i class="meta">&lt;A&gt;</i> is only included if the <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.chorded"><tt>chorded</tt></a> option is active,
+and material <i class="meta">&lt;B&gt;</i> is only included if the <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.chorded"><tt>chorded</tt></a> option is not
+active.</p>
+
+<h3><a name="sec11.5">11.5 Page Layout</a></h3>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.songcolumns"><tt class="lmar">\songcolumns</tt></a><br>
+</td><td valign="top">
+<p>The number of columns per page can be set with <tt>\songcolumns</tt>.
+For example, to create 3 columns per page, write</p>
+
+<blockquote><pre><tt>\songcolumns{3}</tt>
+</pre></blockquote>
+
+
+<p>The number of columns should only be changed outside of <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.songs"><tt>songs</tt></a>
+environments.</p>
+
+<p>Setting the number of columns to zero disables the page-building algorithm
+entirely.
+This can be useful if you want to use an external package, such as
+<tt>multicol</tt> or LaTeX's built-in <tt>\twocolumn</tt> macro, to build pages.
+For example, the following sets up an environment that is suitable for
+a lyric book that uses <tt>\twocolumn</tt>:</p>
+
+<blockquote><pre><tt>\songcolumns{0}</tt>
+<tt>\flushbottom</tt>
+<tt>\twocolumn[\LARGE\centering My Songs]</tt>
+<tt>\begin{</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#env.songs"><tt>songs</tt></a><tt>}{}</tt>
+&#8942;
+<tt>\end{</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#env.songs"><tt>songs</tt></a><tt>}</tt>
+</pre></blockquote>
+
+
+<p>When disabling the page-builder, please note the following potential
+issues:</p>
+
+<ul>
+<li> The <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.repchoruses"><tt>\repchoruses</tt></a> feature does not work when the page-builder
+is disabled because the page-builder is responsible for inserting
+repeated choruses as new columns are formed.
+</li><li> External page-building packages tend to allow column- and
+page-breaks within songs because they have no mechanism for moving an
+entire song to the next column or page to avoid such a break
+(see <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songpos"><tt>\songpos</tt></a> below).
+</li><li> Indexes produced with <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.showindex"><tt>\showindex</tt></a> are typeset to the width of
+the enclosing environment.
+Thus, you should be sure to reset LaTeX back to one column (via
+<tt>\onecolumn</tt>) before executing <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.showindex"><tt>\showindex</tt></a>.
+</li></ul>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.pagepreludes"><tt class="lmar">\pagepreludes</tt></a><br>
+</td><td valign="top">
+<p>Song preludes (i.e., the material atop each song, including the title) are
+typeset by default at column width.
+Writing <tt>\pagepreludes</tt> typesets subsequent preludes at page width atop
+fresh pages, with the rest of the song in multiple columns beneath its title.
+(To prohibit separation of songs from their preludes, it also sets
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songpos"><tt>\songpos</tt></a> to 0.)</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.columnsep"><tt class="lmar">\columnsep</tt></a><br>
+</td><td valign="top">
+<p>The horizontal distance between consecutive columns is controlled by
+the <tt>\columnsep</tt> dimension.
+For example, to separate columns by 1 centimeter of space, write</p>
+
+<blockquote><pre><tt>\columnsep=1cm</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.colbotglue"><tt class="lmar">\colbotglue</tt></a><br>
+</td><td valign="top">
+<p>When LaTeX ends each column it inserts glue equal to <tt>\colbotglue</tt>.
+In lyric books this macro is set to <tt>0pt</tt> so that each column ends flush with
+the bottom of the page.
+In other books that have ragged bottoms, it is set to stretchable
+glue so that columns end at whatever vertical position is convenient.
+The recommended setting for typsetting columns with ragged bottoms is:</p>
+
+<blockquote><pre><tt>\renewcommand{\colbotglue}{0pt plus .5\textheight minus 0pt}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.lastcolglue"><tt class="lmar">\lastcolglue</tt></a><br>
+</td><td valign="top">
+<p>The last column in a <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.songs"><tt>songs</tt></a> environment gets <tt>\lastcolglue</tt> appended
+to it instead.
+By default it is infinitely stretchable so that the last column ends
+at its natural height.
+By setting it to <tt>0pt</tt>, you can force the last column to be flush with
+the bottom of the page:</p>
+
+<blockquote><pre><tt>\renewcommand{\lastcolglue}{0pt}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.songpos"><tt class="lmar">\songpos</tt></a><br>
+</td><td valign="top">
+<p>The <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package uses a song-positioning algorithm that
+moves songs to the next column or page in order to avoid column- or
+page-breaks within songs.
+The algorithm has four levels of aggressiveness, numbered from 0 to 3.
+You can change the aggressiveness level by typing</p>
+
+<blockquote><pre><tt>\songpos{</tt><i class="meta">&lt;level&gt;</i><tt>}</tt>
+</pre></blockquote>
+
+
+<p>The default level is 3, which avoids column-breaks, page-breaks,
+and page-turns within songs whenever possible.
+(Page-turns are page-breaks after odd-numbered pages in two-sided documents,
+or after all pages in one-sided documents.)
+Level 2 avoids page-breaks and page-turns but allows column-breaks within
+songs.
+Level 1 avoids only page-turns within songs.
+Level 0 turns off the song-positioning algorithm entirely.
+This causes songs to be positioned wherever TeX thinks is best
+based on penalty settings (see <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.vvpenalty"><tt>\vvpenalty</tt></a> and <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.spenalty"><tt>\spenalty</tt></a>).</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.spenalty"><tt class="lmar">\spenalty</tt></a><br>
+</td><td valign="top">
+<p>The value of <tt>\spenalty</tt> controls the undesirability of column breaks
+at song boundaries.
+Usually it should be set to a value between 0 and <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.vvpenalty"><tt>\vvpenalty</tt></a> so that
+breaks between songs are preferable to breaks between verses within a song.
+By default it is set to 100.
+When it is <span class="nowrap">-10000</span> or less, breaks between songs are required, so that
+each song always begins a fresh column.</p>
+
+<h3><a name="sec11.6">11.6 Indexes</a></h3>
+
+<h4><a name="sec11.6.1">11.6.1 Index Appearance</a></h4>
+
+<p><b><a name="sec11.6.1.1">Index Titles.</a></b> &nbsp;To customize the appearance of index titles, redefine the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songsection"><tt>\songsection</tt></a>
+and/or <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songchapter"><tt>\songchapter</tt></a> macros from <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec9">section 9</a>.
+For example, to use LaTeX's built-in <tt>\section</tt> and <tt>\chapter</tt> macros
+instead, you could write:</p>
+
+<blockquote><pre><tt>\renewcommand{</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songchapter"><tt>\songchapter</tt></a><tt>}{\chapter}</tt>
+<tt>\renewcommand{</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songsection"><tt>\songsection</tt></a><tt>}{\section}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.sepindexestrue"><tt class="lmar">\sepindexestrue</tt></a><br>
+<a name="mac.sepindexesfalse"><tt class="lmar">\sepindexesfalse</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec11.6.1.2">Layout and page divisions.</a></b> &nbsp;Indexes are by default typeset on separate pages, and when an index is
+sufficiently small, it is centered on the page in one column.
+To disable these defaults, write <tt>\sepindexesfalse</tt>.
+This causes indexes to avoid using unnecessary vertical space or
+starting unnecessary new pages.
+To re-enable the defaults, use <tt>\sepindexestrue</tt>.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.idxheadwidth"><tt class="lmar">\idxheadwidth</tt></a><br>
+</td><td valign="top">
+<p>The <tt>\idxheadwidth</tt> length defines the width of the shaded boxes that
+begin each alphabetic block of a large title index.
+Setting it to 0pt suppresses the boxes entirely.
+For example, to set the width of those boxes to 1 centimeter, you could
+define</p>
+
+<blockquote><pre><tt>\setlength{\idxheadwidth}{1cm}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.idxrefsfont"><tt class="lmar">\idxrefsfont</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec11.6.1.3">Fonts and colors.</a></b> &nbsp;To control the formatting of the list of references on the right-hand side
+of index entries, redefine <tt>\idxrefsfont</tt>.
+For example, to typeset each list in boldface, write</p>
+
+<blockquote><pre><tt>\renewcommand{\idxrefsfont}{\bfseries}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.idxtitlefont"><tt class="lmar">\idxtitlefont</tt></a><br>
+<a name="mac.idxlyricfont"><tt class="lmar">\idxlyricfont</tt></a><br>
+</td><td valign="top">
+<p>Title indexes contain entries for song titles and also entries for notable
+lines of lyrics.
+The fonts for these entries are controlled by <tt>\idxtitlefont</tt> and
+<tt>\idxlyricfont</tt>, respectively.
+For example, to show title entries in boldface sans-serif and lyric entries
+in regular roman font, one could define:</p>
+
+<blockquote><pre><tt>\renewcommand{\idxtitlefont}{\sffamily\bfseries}</tt>
+<tt>\renewcommand{\idxlyricfont}{\rmfamily\mdseries}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.idxheadfont"><tt class="lmar">\idxheadfont</tt></a><br>
+</td><td valign="top">
+<p>To change the font used to typeset the capital letters that start each
+alphabetic section of a large title index, redefine <tt>\idxheadfont</tt>.
+For example, to typeset those letters in italics instead of boldface, type</p>
+
+<blockquote><pre><tt>\renewcommand{\idxheadfont}{\sffamily\it\LARGE}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.idxbgcolor"><tt class="lmar">\idxbgcolor</tt></a><br>
+</td><td valign="top">
+<p>To change the background color of the shaded boxes that contain the
+capital letters that start each alphabetic sectino of a large title
+index, redefine <tt>\idxbgcolor</tt>.
+For example:</p>
+
+<blockquote><pre><tt>\renewcommand{\idxbgcolor}{red}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.idxauthfont"><tt class="lmar">\idxauthfont</tt></a><br>
+</td><td valign="top">
+<p>The font used to typeset entries of an author index is controlled by
+<tt>\idxauthfont</tt>.
+For example, to typeset such entries in italics instead of boldface, type</p>
+
+<blockquote><pre><tt>\renewcommand{\idxauthfont}{\small\it}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.idxscripfont"><tt class="lmar">\idxscripfont</tt></a><br>
+</td><td valign="top">
+<p>The font used to typeset entries of a scripture index is controlled by
+<tt>\idxscripfont</tt>.
+For example, to typeset such entries in boldface instead of italics, type</p>
+
+<blockquote><pre><tt>\renewcommand{\idxscripfont}{\sffamily\small\bfseries}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.idxbook"><tt class="lmar">\idxbook</tt></a><br>
+</td><td valign="top">
+<p>To control the formatting of the lines that start each new book of the
+bible in a scripture index, redefine <tt>\idxbook</tt>, which accepts the book
+name as its single argument.
+For example, to typeset each book name in a box, one could define</p>
+
+<blockquote><pre><tt>\renewcommand{\idxbook}[1]{\framebox{\small\bfseries#1}}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.idxcont"><tt class="lmar">\idxcont</tt></a><br>
+</td><td valign="top">
+<p>In a scripture index, when a column break separates a block of entries
+devoted to a book of the bible, the new column is titled
+"<i class="meta">&lt;bookname&gt;</i> (continued)" by default.
+You can change this default by redefining the <tt>\idxcont</tt> macro, which
+receives the <i class="meta">&lt;bookname&gt;</i> as its single argument.
+For example, to typeset an index in German, one might define</p>
+
+<blockquote><pre><tt>\renewcommand{\idxcont}[1]{\small\textbf{#1} (fortgefahren)}</tt>
+</pre></blockquote>
+
+<h4><a name="sec11.6.2">11.6.2 Entry References</a></h4>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.indexsongsas"><tt class="lmar">\indexsongsas</tt></a><br>
+</td><td valign="top">
+<p>By default, the right-hand side of each index entry contains a list of
+one or more song numbers.
+To instead list page numbers, use the <tt>\indexsongsas</tt> macro:</p>
+
+<blockquote><pre><tt>\indexsongsas{</tt><i class="meta">&lt;id&gt;</i><tt>}{\thepage}</tt>
+</pre></blockquote>
+
+
+<p>where <i class="meta">&lt;id&gt;</i> is the same identifier used in the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.newindex"><tt>\newindex</tt></a>,
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.newauthorindex"><tt>\newauthorindex</tt></a>, or <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.newscripindex"><tt>\newscripindex</tt></a> macro that created the index.
+The second argument must always be something that expands into raw text
+without any formatting, since this text gets output to auxiliary files that
+are lexographically sorted by the index-generation program.
+To go back to indexing songs by song number, use <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.thesongnum"><tt>\thesongnum</tt></a> in place
+of <tt>\thepage</tt> in the above.</p>
+
+<h4><a name="sec11.6.3">11.6.3 PDF Bookmarks and Links</a></h4>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.songtarget"><tt class="lmar">\songtarget</tt></a><br>
+<a name="mac.songlink"><tt class="lmar">\songlink</tt></a><br>
+</td><td valign="top">
+<p>Each <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> environment adds a PDF bookmark (if generating a PDF)
+and hyperlink target (if using the <tt>hyperref</tt> package) for the
+song by invoking <tt>\songtarget</tt> with two arguments:
+(1) a suggested PDF bookmark level, and (2) a link target name.
+Links in indexes to these targets are created by <tt>\songlink</tt>, which
+also gets two arguments:
+(1) the link target name (same as the second argument to <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songtarget"><tt>\songtarget</tt></a>),
+and (2) the text to be linked.</p>
+
+<p>Redefine these macros to customize or suppress these bookmarks, targets,
+and links.
+For example, to enable both bookmarks and links (the default behavior) use:</p>
+
+<blockquote><pre><tt>\renewcommand{\songtarget}[2]</tt>
+<tt>  {\pdfbookmark[#1]{</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.thesongnum"><tt>\thesongnum</tt></a><tt>. </tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songtitle"><tt>\songtitle</tt></a><tt>}{#2}}</tt>
+<tt>\renewcommand{\songlink}[2]{\hyperlink{#1}{#2}}</tt>
+</pre></blockquote>
+
+
+<p>To enable links but not bookmarks, use:</p>
+
+<blockquote><pre><tt>\renewcommand{\songtarget}[2]{\hypertarget{#2}{\relax}}</tt>
+<tt>\renewcommand{\songlink}[2]{\hyperlink{#1}{#2}}</tt>
+</pre></blockquote>
+
+
+<p>To disable both bookmarks and links, use:</p>
+
+<blockquote><pre><tt>\renewcommand{\songtarget}[2]{}</tt>
+<tt>\renewcommand{\songlink}[2]{#2}</tt>
+</pre></blockquote>
+
+<h4><a name="sec11.6.4">11.6.4 Sort Order</a></h4>
+
+<p>The alphabetic ordering of entries in title and author indexes is dictated
+by the computer system on which the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> software is installed.
+Different languages and regions have different sorting conventions, so the
+<tt>songidx</tt> Lua script delegates decisions about order to your operating system.
+If the default ordering proves inadequate, you can modify it by changing your
+operating system's <i>locale</i> (see your system's local help files).
+Alternatively, you can explicitly tell the <tt>songidx</tt> program which locale to
+use in one of three ways:</p>
+
+<ul>
+<li> <i>Windows:</i>
+Edit the <tt>generate.bat</tt> file in the <tt>Sample</tt> folder (or your working folder)
+with any plain text editor (e.g., Vim or Notepad).
+Near the top, find the line that says <tt>SET locale=</tt>.
+After the <tt>=</tt>, type any valid locale name.
+For a list of valid locale names on Windows, please see the "Language name
+abbreviation" column of Microsoft's online National Language Support (NLS)
+API Reference:
+
+<p class="center"><a href="http://msdn.microsoft.com/en-us/goglobal/bb896001.aspx">http://msdn.microsoft.com/en-us/goglobal/bb896001.aspx</a></p>
+
+</li><li> <i>Unix:</i>
+Create an environment variable named <tt>SONGIDX_LOCALE</tt> and set it equal to
+the desired locale name.
+The command <tt>locale -a</tt> lists all valid locale names on most Unix systems.
+
+</li><li> <i>Command-line:</i>
+If you are executing the <tt>songidx</tt> script manually, use the <tt>-l</tt> option to
+specify the locale:
+
+<blockquote><pre><tt>texlua songidx -l sv_SE myindex.sxd myindex.sbx</tt>
+</pre></blockquote>
+
+</li></ul>
+
+<h4><a name="sec11.6.5">11.6.5 Special Words In Song Info</a></h4>
+
+<p>The following macros control how certain keywords are treated when parsing
+and sorting index entries.
+They only affect indexes that have already been declared, so put them
+strictly after all your index creation commands (see <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec10.1">section 10.1</a>).</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.titleprefixword"><tt class="lmar">\titleprefixword</tt></a><br>
+</td><td valign="top">
+<p>In English, when a title begins with "The" or "A", it is traditional to
+move these words to the end of the title and sort the entry by the following
+word.
+So for example, "The Song Title" is typically indexed as
+"Song Title, The".
+To change this default behavior, you can use <tt>\titleprefixword</tt> in the
+document preamble to identify each word to be moved to the end whenever
+it appears as the first word of a title index entry.
+For example, to cause the word "I" to be moved to the end of title index
+entries, one could say,</p>
+
+<blockquote><pre><tt>\titleprefixword{I}</tt>
+</pre></blockquote>
+
+
+<p>The first use of <tt>\titleprefixword</tt> overrides the defaults, so if you also
+want to continue to move "The" and "A" to the end of entries, you must
+also say <tt>\titleprefixword{The}</tt> and <tt>\titleprefixword{A}</tt> explicitly.
+This macro may only be used in the document preamble but may be used
+multiple times to declare multiple prefix words.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.authsepword"><tt class="lmar">\authsepword</tt></a><br>
+</td><td valign="top">
+<p>When parsing author index entries, the word "and" is recognized by the
+<tt>songidx</tt> script as a conjunctive that separates author names.
+To override this default and specify a different conjunctive, use the
+<tt>\authsepword</tt> macro one or more times in the document preamble.
+For example, to instead treat "und" as a conjunctive, you could say,</p>
+
+<blockquote><pre><tt>\authsepword{und}</tt>
+</pre></blockquote>
+
+
+<p>The first use of <tt>\authsepword</tt> and each of the following macros overrides
+the default, so if you also want to continue to treat "and" as a
+conjunctive, you must also say <tt>\authsepword{and}</tt> explicitly.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.authbyword"><tt class="lmar">\authbyword</tt></a><br>
+</td><td valign="top">
+<p>When parsing author index entries, the word "by" is recognized as a
+keyword signaling that the index entry should only include material
+in the current list item that follows the word "by".
+So for example, "Music by J.S. Bach" is indexed as "Bach, J.S."
+rather than "Bach, Music by J.S."
+To recognize a different word instead of "by", you can use <tt>\authbyword</tt>
+in the document preamble.
+For example, to recognize "durch" instead, you could say</p>
+
+<blockquote><pre><tt>\authbyword{durch}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.authignoreword"><tt class="lmar">\authignoreword</tt></a><br>
+</td><td valign="top">
+<p>When parsing author index entries, if a list item contains the word
+"unknown", that item is ignored and is not indexed.
+This prevents items like "Composer unknown" from being indexed as names.
+To cause the indexer to recognize and ignore a different word, you can
+use the <tt>\authignoreword</tt> macro in the document preamble.
+For example, to ignore author index entries containing the word
+"unbekannt", you could say,</p>
+
+<blockquote><pre><tt>\authignoreword{unbekannt}</tt>
+</pre></blockquote>
+
+<h3><a name="sec11.7">11.7 Page Headers and Footers</a></h3>
+
+<p>In LaTeX, page headers and footers are defined using a system of
+invisible <i>marks</i> that get inserted into the document at the
+beginning of each logical unit of the document (e.g., each section, song,
+verse, and chorus).
+The headers and footers are then defined so as to refer to the first
+and/or last invisible mark that ends up on each page once the document
+is divided into pages.
+This section describes the marks made available by the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package.
+For more detailed information about the marks already provided by
+LaTeX and how to use them, consult any LaTeX user manual.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.songmark"><tt class="lmar">\songmark</tt></a><br>
+<a name="mac.versemark"><tt class="lmar">\versemark</tt></a><br>
+<a name="mac.chorusmark"><tt class="lmar">\chorusmark</tt></a><br>
+</td><td valign="top">
+<p>To add song information to page headings and footers, redefine <tt>\songmark</tt>,
+<tt>\versemark</tt>, or <tt>\chorusmark</tt> to add the necessary TeX marks to the
+current page whenever a new song, verse, or chorus begins.
+These macros expect no arguments; to access the current song's
+information including titles, use the macros documented in
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#sec12">section 12</a>.
+To access the current song's number or the current verse's number, use
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.thesongnum"><tt>\thesongnum</tt></a> or <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.theversenum"><tt>\theversenum</tt></a> (see <a href="http://songs.sourceforge.net./songsdoc/songs.html#sec11.1">section 11.1</a>).
+For example, to include the song number in the page headings produced by
+LaTeX's <tt>\pagestyle{myheadings}</tt> feature, you could redefine <tt>\songmark</tt>
+as follows:</p>
+
+<blockquote><pre><tt>\renewcommand{\songmark}{\markboth{</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.thesongnum"><tt>\thesongnum</tt></a><tt>}{</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.thesongnum"><tt>\thesongnum</tt></a><tt>}}</tt>
+</pre></blockquote>
+
+<h3><a name="sec11.8">11.8 Defining New Beginsong Keyvals</a></h3>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.newsongkey"><tt class="lmar">\newsongkey</tt></a><br>
+</td><td valign="top">
+<p>The <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> macro supports several optional keyval parameters for
+declaring song information, including <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.byE"><tt>by=</tt></a>, <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.srE"><tt>sr=</tt></a>, and <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.crE"><tt>cr=</tt></a>.
+Users can define their own additional keyvals as well.
+To do so, use the <tt>\newsongkey</tt> macro, which has the syntax</p>
+
+<blockquote><pre><tt>\newsongkey{</tt><i class="meta">&lt;keyname&gt;</i><tt>}{</tt><i class="meta">&lt;initcode&gt;</i><tt>}[</tt><i class="meta">&lt;default&gt;</i><tt>]{</tt><i class="meta">&lt;setcode&gt;</i><tt>}</tt>
+</pre></blockquote>
+
+
+<p>Here, <i class="meta">&lt;keyname&gt;</i> is the name of the new key for the keyval,
+<i class="meta">&lt;initcode&gt;</i> is LaTeX code that is executed at the start of each
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> line before the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> arguments are processed,
+<i class="meta">&lt;default&gt;</i> (if specified) is the default value used for the keyval when
+<i class="meta">&lt;keyname&gt;</i> appears in <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> without a value,
+and <i class="meta">&lt;setcode&gt;</i> is macro code that is executed whenever
+<i class="meta">&lt;key&gt;</i> is parsed as part of the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> keyval arguments.
+In <i class="meta">&lt;setcode&gt;</i>, <tt>#1</tt> expands to the value given by the user for the
+keyval (or to <i class="meta">&lt;default&gt;</i> if no value was given).</p>
+
+<p>For example, to define a new song key called <tt>arr</tt> which stores its
+value in a macro called <tt>\arranger</tt>, one could write:</p>
+
+<blockquote><pre><tt>\newcommand{\arranger}{}</tt>
+<tt>\newsongkey{arr}{\def\arranger{}}</tt>
+<tt>                {\def\arranger{Arranged by #1\par}}</tt>
+</pre></blockquote>
+
+
+<p>Then one could redefine <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.extendprelude"><tt>\extendprelude</tt></a> to print the arranger below the
+other song header information:</p>
+
+<blockquote><pre><tt>\renewcommand{\extendprelude}{</tt>
+  <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.showrefs"><tt>\showrefs</tt></a><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.showauthors"><tt>\showauthors</tt></a>
+<tt>  {\bfseries\arranger}</tt>
+<tt>}</tt>
+</pre></blockquote>
+
+
+<p>A <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> line could then specify the song's arranger as follows:</p>
+
+<blockquote><pre><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a><tt>{The Title}[arr={R. Ranger}]</tt>
+&#8942;
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.endsong"><tt>\endsong</tt></a>
+</pre></blockquote>
+
+<p>This produces</p>
+
+<p class="center"><img src="./Songs Package Documentation_files/sample6.gif" alt="document fragment"></p>
+
+<p>For more detailed information about keyvals and how they work, consult the
+documentation for David Carlisle's <tt>keyval</tt> package, which comes standard
+with most LaTeX 2&#949; installations.</p>
+
+<h3><a name="sec11.9">11.9 Font Kerning Corrections</a></h3>
+
+<p><b><a name="sec11.9.0.1">Chord Overstriking.</a></b> &nbsp;In order to conserve space and keep songs readable, the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package
+pushes chords down very close to the lyrics with which they are paired.
+Unfortunately, this can sometimes cause low-hanging characters in chord
+names to overstrike the lyrics they sit above.
+For example,</p>
+
+<blockquote><p><tt>\[(Gsus4/D)]Overstrike</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces24.gif" alt="document fragment"></p></blockquote>
+
+
+
+<p>Note that the parentheses and slash symbols in the chord name have
+invaded the lyric that sits beneath them.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.chordlocals"><tt class="lmar">\chordlocals</tt></a><br>
+</td><td valign="top">
+<p>The best solution to this problem is to use a font for chord names that
+minimizes low-hanging symbols; but if you lack such a font, then the
+following trick works pretty well.
+Somewhere in the preamble of your document, you can write the following
+LaTeX code:</p>
+
+<blockquote><pre><tt>\renewcommand{\chordlocals}{\catcode‘(\active</tt>
+<tt>                            \catcode‘)\active</tt>
+<tt>                            \catcode‘/\active}</tt>
+<tt>\newcommand{\smraise}[1]{\raise2pt\hbox{\small#1}}</tt>
+<tt>\newcommand{\myslash}{\smraise/}</tt>
+<tt>\newcommand{\myopenparen}{\smraise(</tt><tt>}</tt>
+<tt>\newcommand{\mycloseparen}{\smraise)}</tt>
+<tt>{\chordlocals</tt>
+<tt> \global\let(\myopenparen</tt>
+<tt> \global\let)\mycloseparen</tt>
+<tt> \global\let/\myslash}</tt>
+</pre></blockquote>
+
+
+<p>This sets the <tt>/</tt>, <tt>(</tt>, and <tt>)</tt> symbols as active characters whenever they
+appear within chord names.
+For more information, consult the implementation section of the <a href="http://songs.sourceforge.net/songs.pdf">pdf documentation</a>.
+Each active character is defined so that it produces a smaller, raised
+version of the original symbol.
+The result is as follows:</p>
+
+<blockquote><p><tt>\[(Gsus4/D)]Overstrike (fixed)</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>produces</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="product" src="./Songs Package Documentation_files/produces25.gif" alt="document fragment"></p></blockquote>
+
+
+
+<p>As you can see, the low-hanging symbols have been elevated so that they
+sit above the baseline, correcting the overstrike problem.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.shiftdblquotes"><tt class="lmar">\shiftdblquotes</tt></a><br>
+</td><td valign="top">
+<p><b><a name="sec11.9.0.2">Scripture Font Quotation Marks.</a></b> &nbsp;The <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package compensates for a kerning problem in the Zaph Chancery
+font (used to typeset scripture quotations) by redefining the <tt>‘‘</tt> and <tt>’’</tt>
+token sequences to be active characters that yield double-quotes shifted
+1.1 points and 2 points left, respectively, of their normal positions.
+If you use a different font size for scripture quotations, then you can use
+the <tt>\shiftdblquotes</tt> macro when redefining <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.scripturefont"><tt>\scripturefont</tt></a> to change
+this kerning correction.
+For example,</p>
+
+<blockquote><pre><tt>\renewcommand{</tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.scripturefont"><tt>\scripturefont</tt></a><tt>}{</tt>
+<tt>  \usefont{OT1}{pzc}{mb}{it}</tt>
+<tt>  \shiftdblquotes{-1pt}{-2pt}{-3pt}{-4pt}</tt>
+<tt>}</tt>
+</pre></blockquote>
+
+
+<p>removes 1 point of space to the left and 2 points of space to the
+right of left-double-quote characters, and 3 points to the left and 4 points
+to the right of right-double-quotes, within scripture quotations.</p>
+
+<h2><a name="sec12">12 Informational Macros</a></h2>
+
+<p>The macros described in this section can be used to retrieve information
+about the current song.
+This can be used when redefining <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.extendprelude"><tt>\extendprelude</tt></a>, <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.extendpostlude"><tt>\extendpostlude</tt></a>,
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.makeprelude"><tt>\makeprelude</tt></a>, <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.makepostlude"><tt>\makepostlude</tt></a>, <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songmark"><tt>\songmark</tt></a>, <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.versemark"><tt>\versemark</tt></a>, or
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.chorusmark"><tt>\chorusmark</tt></a>, or any other macros that might typeset this information.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.songauthors"><tt class="lmar">\songauthors</tt></a><br>
+</td><td valign="top">
+<p>To get the current song's list of authors (if any) use <tt>\songauthors</tt>.
+This yields the value of the <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.byE"><tt>by=</tt></a> key used in the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a>
+line.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.songrefs"><tt class="lmar">\songrefs</tt></a><br>
+</td><td valign="top">
+<p>To get the current song's list of scripture references (if any) use
+<tt>\songrefs</tt>.
+This yields the value of the <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.srE"><tt>sr=</tt></a> key used in the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a>
+line, but modified with hyphens changed to en-dashes and spaces falling
+within a list of verse numbers changed to thin spaces for better
+typesetting.
+In addition, various penalties have been added to inhibit line breaks
+in strange places and encourage line breaks in others.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.songcopyright"><tt class="lmar">\songcopyright</tt></a><br>
+</td><td valign="top">
+<p>To get the current song's copyright info (if any), use <tt>\songcopyright</tt>.
+This yields the value of the <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.crE"><tt>cr=</tt></a> key used in the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> line.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.songlicense"><tt class="lmar">\songlicense</tt></a><br>
+</td><td valign="top">
+<p>To get the current song's licensing information (if any), use
+<tt>\songlicense</tt>.
+This yields the value of the <a href="http://songs.sourceforge.net./songsdoc/songs.html#env.liE"><tt>li=</tt></a> key used in the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a>
+line, or whatever text was declared with <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.setlicense"><tt>\setlicense</tt></a>.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.songtitle"><tt class="lmar">\songtitle</tt></a><br>
+</td><td valign="top">
+<p>The <tt>\songtitle</tt> macro yields the current song's title.
+By default this is the first title provided in the <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> line.
+The <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.nexttitle"><tt>\nexttitle</tt></a> and <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.foreachtitle"><tt>\foreachtitle</tt></a> macros (see below) cause it
+to be set to the current song's other titles, if any.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.resettitles"><tt class="lmar">\resettitles</tt></a><br>
+</td><td valign="top">
+<p>To get the current song's primary title (i.e., the first title specified
+in the song's <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.beginsong"><tt>\beginsong</tt></a> line), execute <tt>\resettitles</tt>.
+This sets the <tt>\songtitle</tt> macro to be the song's primary title.</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.nexttitle"><tt class="lmar">\nexttitle</tt></a><br>
+</td><td valign="top">
+<p>To get the song's next title, execute <tt>\nexttitle</tt>, which
+sets <tt>\songtitle</tt> to be the next title in the song's list of titles
+(or sets <tt>\songtitle</tt> to <tt>\relax</tt> if there are no more titles).</p>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.foreachtitle"><tt class="lmar">\foreachtitle</tt></a><br>
+</td><td valign="top">
+<p>The <tt>\foreachtitle</tt> macro accepts LaTeX code as its single
+argument and executes it once for each (remaining) song title.
+Within the provided code, use <tt>\songtitle</tt> to get the current title.
+For example, the following code generates a comma-separated list of all
+of the current song's titles:</p>
+
+<blockquote><pre><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.resettitles"><tt>\resettitles</tt></a>
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songtitle"><tt>\songtitle</tt></a>
+<a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.nexttitle"><tt>\nexttitle</tt></a>
+<tt>\foreachtitle{, </tt><a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.songtitle"><tt>\songtitle</tt></a><tt>}</tt>
+</pre></blockquote>
+
+</td></tr><tr><td class="lmar" align="right" valign="top">
+<a name="mac.songlist"><tt class="lmar">\songlist</tt></a><br>
+</td><td valign="top">
+<p>When <a href="http://songs.sourceforge.net./songsdoc/songs.html#mac.includeonlysongs"><tt>\includeonlysongs</tt></a> is used to extract a partial list of songs, the
+<tt>\songlist</tt> macro expands to the comma-separated list of songs that is being
+extracted.
+Redefining <tt>\songlist</tt> within the document preamble alters the list of
+songs to be extracted.
+Redefining it after the preamble may have unpredictable results.</p>
+
+<h2><a name="sec13">13 Other Resources</a></h2>
+
+<p>There are a number of other LaTeX packages available for typesetting
+songs, tablature diagrams, or song books.
+Probably the best of these is the Song&#9837;ook package by Christopher Rath
+(<a href="http://rath.ca/Misc/Songbook/">http://rath.ca/Misc/Songbook/</a>).
+Most of the differences between other packages and this one are intentional;
+the following is a summary of where I've adopted various differing design
+decisions and why.</p>
+
+
+
+<p><b><a name="sec13.0.0.1">Ease of Song Entry.</a></b> &nbsp;Much of the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package programming is devoted to easing the burden of
+typing chords.
+With most LaTeX song book packages the user types chords using a standard
+LaTeX macro syntax like <tt>\chord{</tt><i class="meta">&lt;chord&gt;</i><tt>}{</tt><i class="meta">&lt;lyric&gt;</i><tt>}</tt>.
+The <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package uses a less conventional
+<tt>\[</tt><i class="meta">&lt;chord&gt;</i><tt>]</tt><i class="meta">&lt;lyric&gt;</i> syntax for several
+reasons detailed below.</p>
+
+<p>First, macros in the standard LaTeX syntax require more key-presses
+than macros in the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package's syntax.
+This can become become very taxing when typing up a large book.
+Chords often appear as frequently as one per syllable, especially in hymns,
+so keeping the syntax as brief as possible is desirable.</p>
+
+<p>Second, the standard LaTeX macro syntax requires the user to estimate how
+much of the <i class="meta">&lt;lyric&gt;</i> will lie below the chord (because the <i class="meta">&lt;lyric&gt;</i>
+part must be enclosed in braces) whereas the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package's syntax does
+not.
+Estimating this accurately can be quite difficult, since in many cases the
+<i class="meta">&lt;lyric&gt;</i> part must include punctuation or multiple words to get proper
+results.
+The <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package automates this for the user, significantly easing the
+task of chord-entry.</p>
+
+<p>Third, unlike the standard LaTeX chord syntax, the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package's
+syntax handles all hyphenation of chorded lyrics fully automatically.
+Extra hyphenation must be introduced in chord books wherever a chord
+is wider than the syllable it sits above.
+With the standard LaTeX chord syntax such hyphenation must be
+introduced manually by the user (usually via a special hyphenation macro),
+but the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package does this automatically.</p>
+
+<p>Fourth and finally, some other packages allow the user to use "<tt>b</tt>"
+in a <i class="meta">&lt;chord&gt;</i> to produce a flat symbol, whereas the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package
+requires an "<tt>&amp;</tt>" instead.
+Using "<tt>b</tt>" is more intuitive but prevents the
+use of "<tt>b</tt>" for any other purpose within a <i class="meta">&lt;chord&gt;</i>, such as to
+produce a literal "b" or to type another macro name like <tt>\hbox</tt> that
+contains a "b".
+Consequently, the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package uses the less obvious "<tt>&amp;</tt>" symbol to
+produce flat symbols.</p>
+
+<p><b><a name="sec13.0.0.2">Song Structure.</a></b> &nbsp;The <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package provides a relatively small number of macros for
+typesetting high-level song structure, including verses, choruses,
+textual comments, and conditional macros that indicate that certain sections
+should go in chord books but not lyric books.
+These can be combined to typeset more sophisticated structures such as
+intros, bridges, brackets, endings, and the like.
+This is done in lieu of providing a specific macro for each of these
+structures since it results in greater flexibility and fewer macros for
+users to learn.</p>
+
+<p><b><a name="sec13.0.0.3">Multiple columns.</a></b> &nbsp;The <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package was designed from the ground up to produce song books
+with many songs per page, arranged in multiple columns.
+As a result, it includes elaborate support for many features not found in
+most other packages, such as automatic column balancing, completely
+customizable song header and song footer blocks, and facilities for adding
+beautiful scripture quotations to fill in gaps between songs.</p>
+
+<p><b><a name="sec13.0.0.4">Indexes.</a></b> &nbsp;Another major feature of the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package is its support for a variety
+of different index types, most notably indexes arranged by scripture
+reference.
+Scripture indexes can be invaluable for planning services around particular
+sermons or topics.
+The <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package allows book authors to specify the names and preferred
+ordering of books of the bible, and automatically handles complex issues
+like overlapping verse ranges to produce an easy-to-read, compact, and
+well-ordered index.
+Other supported indexes include those sorted by author, by title, and by
+notable lines of lyrics.</p>
+
+<p><b><a name="sec13.0.0.5">Automatic Transposition.</a></b> &nbsp;The <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package has a facility for automatically transposing songs, and
+even generating chord books that print the chords in multiple keys (e.g., so
+that a pianist and guitarist using a capo can play together from the same
+book).</p>
+
+
+
+<p>The <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package was developed entirely independently of all other
+LaTeX song book packages.
+I originally developed the set of LaTeX macros that eventually became
+the <b class="nowrap"><i>s<img src="./Songs Package Documentation_files/wholenote.gif" alt="o">ngs</i></b> package in order to typeset a song book for the Graduate
+Christian Fellowship (GCF) at Cornell University, and the Cornell
+International Christian Fellowship (CICF).
+Once I had fine-tuned my package to be sufficiently versatile, I decided
+to release it for public use.
+At that time I noticed the Song&#9837;ook package and others, and wrote this
+summary of the most prominent differences.</p>
+
+<p>For information on more song-typesetting resources for LaTeX, I recommend
+consulting the documentation provided with the Song&#9837;ook package.
+It includes an excellent list of other resources that might be of interest
+to creators of song books.</p>
+
+<h2><a name="sec14">14 GNU General Public License</a></h2>
+<p>This software is covered under version 2.0 of the GNU General Public License.
+A copy of the license is provided online at the <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">Free Software Foundation website</a>.</p>
+</td></tr></tbody></table>
+<p style="text-align: right; margin-top: 20px; margin-right: 10px; clear: right"><a href="http://sourceforge.net/projects/songs"><img style="border: 1px solid #D0D0D0" src="./Songs Package Documentation_files/sflogo.php" alt="sourceforge.net"></a></p>
+
+</body></html>

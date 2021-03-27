@@ -439,34 +439,42 @@
 \newcommand*{\Intro}{%
   \IfStrEq{\@lang}{english}{intro}{}%
   \IfStrEq{\@lang}{french}{intro}{}%
+  \IfStrEq{\@lang}{portuguese}{intro}{}%
 }%
 \newcommand*{\Outro}{%
   \IfStrEq{\@lang}{english}{outro}{}%
   \IfStrEq{\@lang}{french}{outro}{}%
+  \IfStrEq{\@lang}{portuguese}{outro}{}%
 }%
 \newcommand*{\Bridge}{%
   \IfStrEq{\@lang}{english}{bridge}{}%
   \IfStrEq{\@lang}{french}{pont}{}%
+  \IfStrEq{\@lang}{portuguese}{ponte}{}%
 }%
 \newcommand*{\Chorus}{%
   \IfStrEq{\@lang}{english}{chorus}{}%
   \IfStrEq{\@lang}{french}{refrain}{}%
+  \IfStrEq{\@lang}{portuguese}{refrão}{}%
 }%
 \newcommand*{\Verse}{%
   \IfStrEq{\@lang}{english}{verse}{}%
   \IfStrEq{\@lang}{french}{couplet}{}%
+  \IfStrEq{\@lang}{portuguese}{verso}{}%
 }%
 \newcommand*{\Solo}{%
   \IfStrEq{\@lang}{english}{solo}{}%
   \IfStrEq{\@lang}{french}{solo}{}%
+  \IfStrEq{\@lang}{portuguese}{solo}{}%
 }%
 \newcommand*{\Pattern}{%
   \IfStrEq{\@lang}{english}{pattern}{}%
   \IfStrEq{\@lang}{french}{motif}{}%
+  \IfStrEq{\@lang}{portuguese}{motif}{}%
 }%
 \newcommand*{\Rythm}{%
   \IfStrEq{\@lang}{english}{rythm}{}%
   \IfStrEq{\@lang}{french}{rythme}{}%
+  \IfStrEq{\@lang}{portuguese}{rythme}{}%
 }%
 \newcommand*{\Adlib}{%
   \emph{ad~lib.}%
