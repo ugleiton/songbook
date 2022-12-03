@@ -49,9 +49,9 @@ class index:
                 key = "%s (%s)" % (match.group(2), match.group(1))
                 break # Only one match per key
         (first, key) = self.filter(key)
-        if not self.data.has_key(first):
+        if not first in self.data:
             self.data[first] = dict()
-        if not self.data[first].has_key(key):
+        if key not in self.data[first]:
             self.data[first][key] = []
         self.data[first][key].append({'num':number, 'link':link})
 
@@ -107,7 +107,7 @@ def processSXD(filename):
     return idx
 
 def usage(exitCode=None):
-    print "usage: songbook-makeindex.py [options] source"
+    print("usage: songbook-makeindex.py [options] source")
     sys.exit(exitCode)
 
 def main():

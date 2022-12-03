@@ -25,10 +25,10 @@
 % Template parameters
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%:[
-%%:  {"name":"title", "description":"Title", "default":"Livro de cifras para violao", "mandatory":true},
-%%:  {"name":"author", "description":"Author", "default":"Ugleiton", "mandatory":true},
+%%:  {"name":"title", "description":"Title", "default":"Recueil de chansons pour guitare", "mandatory":true},
+%%:  {"name":"author", "description":"Author", "default":"Crep (R. Goffe) \\and Lohrun (A. Dupas)", "mandatory":true},
 %%:  {"name":"booktype", "description":"Type", "type":"enum", "values":["chorded","lyric"], "default":"chorded", "mandatory":true},
-%%:  {"name":"lang", "description":"Language", "default":"portuguese"},
+%%:  {"name":"lang", "description":"Language", "default":"french"},
 %%:  {"name":"instruments", "description":"Instruments", "type":"flag", "values":["guitar","ukulele"], "join":",", "mandatory":true, "default":["guitar"]},
 %%:  {"name":"bookoptions", "description":"Options", "type":"flag", "values":["diagram","importantdiagramonly","lilypond","pictures","tabs","repeatchords","onesongperpage"], "join":",", "mandatory":true, "default":["diagram","pictures"]},
 %%:  {"name":"version", "description":"Version", "default":"3.7.2"},
@@ -39,7 +39,7 @@
 %%:  {"name":"picturecopyright", "description":"Copyright", "default":"foxygamergirl@deviantart.com"},
 %%:  {"name":"footer", "description":"Footer", "default":"\\begin{flushleft}\\includegraphics[width=3cm]{on-fire}\\end{flushleft}"},
 %%:  {"name":"license", "description":"License", "type":"file", "default":"license.tex"},
-%%:  {"name":"mainfontsize", "description":"Font Size", "type":"font", "default":"12"},
+%%:  {"name":"mainfontsize", "description":"Font Size", "type":"font", "default":"10"},
 %%:  {"name":"songnumberbgcolor", "description":"Number Shade", "type":"color", "default":"#D1E4AE"},
 %%:  {"name":"notebgcolor", "description":"Note Shade", "type":"color", "default":"#D1E4AE"},
 %%:  {"name":"indexbgcolor", "description":"Index Shade", "type":"color", "default":"#D1E4AE"},
@@ -84,9 +84,6 @@
 \renewcommand{\snumbgcolor}{SongNumberBgColor}
 \renewcommand{\notebgcolor}{NoteBgColor}
 \renewcommand{\idxbgcolor}{IndexBgColor}
-\renewcommand{\printchord}[1]{\rmfamily\bf#1}
-\renewcommand{\printversenum}[1]{}
-\renewcommand{\printsongnum}[1]{\it\LARGE#1}
 
 \gettitleprefixwords
 
@@ -110,32 +107,41 @@
   \IfStrEq{\getlang}{english}{\title{Patacrep songbook}}{}
 }{}
 
-%\maketitle
+\maketitle
 
 % licence
-%\newpage
-%\input{\getlicense}
-%\newpage
+\newpage
+\input{\getlicense}
+\newpage
 
 % indexes
-\showindex{Indice de músicas}{titleidx}
+\IfStrEq{\getlang}{english}{
+  \showindex{Songs Index}{titleidx}
+}{
+  \showindex{Index des chansons}{titleidx}
+}
+\IfStrEq{\getlang}{english}{
+  \showindex{Authors Index}{authidx}
+}{
+  \showindex{Index des auteurs}{authidx}
+}
 
 % chords notation
-%\IfStrEq{\getlang}{french}{
-%  \notenamesin{A}{B}{C}{D}{E}{F}{G}
-%  \notenamesout{La}{Si}{Do}{Ré}{Mi}{Fa}{Sol}
-%}{}
+\IfStrEq{\getlang}{french}{
+  \notenamesin{A}{B}{C}{D}{E}{F}{G}
+  \notenamesout{La}{Si}{Do}{Ré}{Mi}{Fa}{Sol}
+}{}
 
 % list of chords
-%\ifchorded
-%\phantomsection
-%\IfStrEq{\getlang}{english}{
-%  \addcontentsline{toc}{section}{Chords list}
-%}{
-%  \addcontentsline{toc}{section}{Liste des accords}
-%}
-%\include{tex/chords}
-%\fi
+\ifchorded
+\phantomsection
+\IfStrEq{\getlang}{english}{
+  \addcontentsline{toc}{section}{Chords list}
+}{
+  \addcontentsline{toc}{section}{Liste des accords}
+}
+\include{tex/chords}
+\fi
 
 % songs
 \phantomsection

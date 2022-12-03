@@ -4,7 +4,7 @@ import re
 import warnings
 import locale
 
-iecPattern = re.compile(r"\IeC {\\(.*?)}")
+iecPattern = re.compile(r"IeC {\\(.*?)}")
 replacePattern = {
      '`A': 'À',
      '`a': 'à',
